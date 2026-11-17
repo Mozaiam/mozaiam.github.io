@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Apoie o canal | Controle Quebrado</title>
+<meta name="description" content="Apoie o Controle Quebrado com qualquer valor pelo Pix. O apoio é voluntário e todo o conteúdo do site continua gratuito.">
+<link rel="canonical" href="https://62828273738828.github.io/mozaiam.github.io/apoie.html">
+<link rel="icon" type="image/png" href="icone.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Controle Quebrado">
+<meta property="og:title" content="Apoie o canal | Controle Quebrado">
+<meta property="og:description" content="Apoie o Controle Quebrado com qualquer valor pelo Pix. O apoio é voluntário e todo o conteúdo do site continua gratuito.">
+<meta property="og:url" content="https://62828273738828.github.io/mozaiam.github.io/apoie.html">
+<meta property="og:image" content="https://62828273738828.github.io/mozaiam.github.io/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0a10">
+<link rel="preload" href="fontes/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+/* Cores e fontes do canal (as mesmas da página inicial) */
+:root {
+  --fundo: #0c0a10; --superficie: #17131d; --borda: #2b2433;
+  --texto: #f4f1f6; --texto-suave: #b6adbf; --carmesim: #e3123f; --rosa: #ff5c8a;
+  --titulo: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+  --corpo: "Barlow", system-ui, sans-serif;
+  color-scheme: dark; box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+:root[data-theme="dark"] { color-scheme: dark; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+*, *::before, *::after { box-sizing: inherit; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 400 1.125rem/1.7 var(--corpo); }
+a { color: var(--rosa); }
+a:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+.container { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+.topo { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem; padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.logo { font: 1.7rem/1 var(--titulo); color: var(--texto); text-decoration: none; letter-spacing: .03em; }
+.topo a.voltar { color: var(--texto-suave); text-decoration: none; }
+.topo a.voltar:hover { color: var(--texto); }
+main { padding-block: 2rem 3.5rem; }
+h1 { margin: 0 0 .5rem; font: clamp(2.8rem, 9vw, 4.5rem)/1 var(--titulo); letter-spacing: .02em; }
+h1 span { color: var(--carmesim); }
+h2 { margin: 2.25rem 0 .5rem; font: 2rem/1.1 var(--titulo); letter-spacing: .02em; }
+p, li { color: var(--texto-suave); }
+p { margin: 0 0 1rem; }
+.atualizado { font-size: .95rem; }
+.btn { display: inline-block; padding: .8rem 1.4rem; border-radius: 6px; font-weight: 600; text-decoration: none; background: var(--carmesim); color: #fff; transition: background .2s; }
+.btn:hover { background: #b80d33; }
+.btn:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+.rodape { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem; padding-top: 1.5rem; padding-bottom: 2rem; border-top: 1px solid var(--borda); color: var(--texto-suave); font-size: .95rem; }
+.rodape nav { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; }
+.logo { display: flex; align-items: center; gap: .6rem; }
+.logo img { width: 40px; height: 40px; border-radius: 50%; }
+.topo nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.topo nav a { color: var(--texto-suave); text-decoration: none; }
+.topo nav a:hover { color: var(--texto); }
+/* Cabeçalho e rodapé compartilhados (iguais em todas as páginas) */
+.top,.bot{--h-bg:#0c0a10;--h-line:#2b2433;--h-text:#f4f1f6;--h-mute:#b6adbf;--h-rosa:#ff5c8a;--h-car:#e3123f;font:400 1rem/1.5 "Barlow",system-ui,sans-serif}
+.top a,.bot a{text-decoration:none}
+.top a:focus-visible,.bot a:focus-visible{outline:3px solid var(--h-rosa);outline-offset:3px}
+.top{position:sticky;top:0;z-index:50;background:var(--h-bg);border-bottom:1px solid var(--h-line)}
+.top .wrap,.bot .wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+.bar{display:flex;align-items:center;gap:1.25rem;min-height:4rem;flex-wrap:nowrap;padding-block:.35rem}
+.top .logo{flex:none;white-space:nowrap;display:flex;align-items:center;gap:.6rem;font:1.7rem/1 "Bebas Neue","Arial Narrow",Impact,sans-serif;letter-spacing:.03em;color:var(--h-text)}
+.top .logo img{width:40px;height:40px;border-radius:50%}
+.menu{display:flex;gap:.25rem 1.1rem;flex-wrap:wrap;flex:1 1 auto;min-width:0}
+.menu a{color:var(--h-mute)}
+.menu a:hover,.menu a[aria-current="page"]{color:var(--h-text)}
+.menu a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--h-rosa);text-underline-offset:6px}
+.top .sub{margin-left:auto;white-space:nowrap;flex:none;background:var(--h-car);color:#fff;font-weight:600;padding:.45rem 1rem;border-radius:6px;font-size:.95rem}
+.top .sub:hover{background:#b80d33}
+.bot{border-top:1px solid var(--h-line);padding:1.5rem 0 2rem;color:var(--h-mute);font-size:.95rem;background:var(--h-bg)}
+.bot .wrap{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;justify-content:space-between}
+.bot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem}
+.bot a{color:var(--h-mute)}
+.bot a:hover{color:var(--h-text)}
+@media(max-width:800px){.top{position:static}.bar{flex-wrap:wrap}.menu{flex:1 1 100%;order:3}.top .sub{margin-left:auto}}
+.pix { position: relative; margin: 1.5rem 0 2rem; padding: 1.5rem; background: linear-gradient(180deg, rgba(23,19,29,.92), rgba(12,10,16,.92)); border: 1px solid rgba(255,255,255,.09); }
+.pix::before, .pix::after { content: ""; position: absolute; width: 14px; height: 14px; pointer-events: none; }
+.pix::before { top: -1px; left: -1px; border-top: 2px solid var(--cy); border-left: 2px solid var(--cy); }
+.pix::after { right: -1px; bottom: -1px; border-bottom: 2px solid var(--rd); border-right: 2px solid var(--rd); }
+.pix .rotulo { margin: 0 0 .5rem; font: 700 .72rem var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--cy); }
+.pix .nome { margin: 0; color: var(--texto); font-weight: 600; }
+.chave { display: block; margin: .75rem 0 1rem; padding: .8rem 1rem; background: #05040a; border: 1px solid rgba(62,224,255,.25); border-left: 3px solid var(--cy); font: 500 1rem/1.4 var(--mono); color: #9af0ff; overflow-wrap: anywhere; user-select: all; }
+.pix .btn { cursor: pointer; }
+.pix .aviso { margin: 1rem 0 0; min-height: 1.5rem; font-size: .95rem; }
+ol { padding-left: 1.25rem; }
+li { margin: .5rem 0; }
+</style>
+<link rel="stylesheet" href="tema.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><img src="icone.png" alt="" width="40" height="40">Controle Quebrado</a>
+    <nav class="menu" aria-label="Principal"><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a></nav>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
+  </div>
+</header>
+<main class="container">
+<h1>Apoie o <span>canal</span></h1>
+<p>O Controle Quebrado é recente e pequeno, mas feito com muito carinho, e tudo o que você encontra aqui é gratuito. Se o conteúdo te ajudou, você pode apoiar com o valor que quiser pelo Pix.</p>
+<p>O apoio é voluntário e não dá acesso a conteúdo exclusivo.</p>
+<div class="pix">
+  <p class="rotulo">[ Pix · chave aleatória ]</p>
+  <p class="nome">Recebedor: Caio Mendonça</p>
+  <code class="chave" id="chave">a9125910-1502-43a3-91c5-ac8ddde34787</code>
+  <button type="button" class="btn" id="copiar-chave">Copiar chave</button>
+  <p class="aviso" id="aviso-pix" role="status" aria-live="polite"></p>
+</div>
+<h2>Como apoiar</h2>
+<ol>
+  <li>Abra o aplicativo do seu banco e escolha o Pix.</li>
+  <li>Escolha pagar com chave Pix e cole a chave copiada acima.</li>
+  <li>Confira se o nome do recebedor é Caio Mendonça e digite o valor que quiser.</li>
+  <li>Confirme o pagamento.</li>
+</ol>
+<p>O pagamento é feito no aplicativo do seu banco. Este site não processa pagamentos e não recebe nem guarda dados do pagamento.</p>
+<h2>Cuidado com golpes</h2>
+<p>Use somente a chave desta página. O canal nunca pede senha, código de verificação ou dados de cartão. Se alguém pedir apoio em nome do Controle Quebrado por outro lugar, desconfie e confira a chave aqui.</p>
+<h2>Também ajuda</h2>
+<p>Não pode ou não quer doar? Se inscrever no canal, curtir e compartilhar os vídeos já ajuda muito. <a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">Abrir o canal no YouTube</a>.</p>
+</main>
+<footer class="bot">
+  <div class="wrap">
+    <span>© 2026 Controle Quebrado</span>
+    <nav aria-label="Rodapé">
+      <a href="sobre.html">Sobre</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+  </div>
+</footer>
+<script>
+// Botão que copia a chave Pix
+document.getElementById('copiar-chave').addEventListener('click', function () {
+  var texto = document.getElementById('chave').textContent.trim();
+  copiar(texto).then(function (ok) {
+    document.getElementById('aviso-pix').textContent = ok
+      ? 'Chave copiada! Cole no aplicativo do seu banco.'
+      : 'Não consegui copiar. Selecione a chave acima e copie manualmente.';
+  });
+});
+function copiar(texto) {
+  if (navigator.clipboard && window.isSecureContext) {
+    return navigator.clipboard.writeText(texto).then(function () { return true; }, function () { return copiarAntigo(texto); });
+  }
+  return Promise.resolve(copiarAntigo(texto));
+}
+function copiarAntigo(texto) {
+  var campo = document.createElement('textarea');
+  campo.value = texto; campo.style.position = 'fixed'; campo.style.opacity = '0';
+  document.body.appendChild(campo); campo.select();
+  var ok = false;
+  try { ok = document.execCommand('copy'); } catch (e) {}
+  campo.remove();
+  return ok;
+}
+</script>
+</body>
+</html>
