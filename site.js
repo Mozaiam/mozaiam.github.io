@@ -7,12 +7,14 @@
     ["Recompilados", "index.html#recompilados"],
     ["Linux", "index.html#linux"],
     ["Comandos", "comandos.html"],
-    ["Quiz de driver", "quiz-driver.html"]
+    ["Quiz de driver", "quiz-driver.html"],
+    ["Indicados", "indicados.html"]
   ];
   var RODAPE = [
     ["Sobre", "sobre.html"],
     ["Comandos", "comandos.html"],
     ["Quiz de driver", "quiz-driver.html"],
+    ["Indicados", "indicados.html"],
     ["Contato", "contato.html"],
     ["Privacidade", "privacidade.html"],
     ["YouTube", "https://www.youtube.com/@controlequebrado_tv"]

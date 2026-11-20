@@ -70,3 +70,25 @@ body .opcao[aria-pressed="true"]{border-color:var(--rd);background:rgba(227,18,6
 body .codigo{text-shadow:0 0 40px rgba(227,18,63,.55)}
 a:focus-visible,button:focus-visible{outline-color:var(--cy)}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+/* Box de produto indicado dentro de guias e notícias (afiliado) */
+.indica{position:relative;margin:1.5rem 0 2rem;padding:1.1rem 1.25rem;background:linear-gradient(180deg,rgba(23,19,29,.92),rgba(12,10,16,.92));border:1px solid rgba(255,255,255,.09)}
+.indica::before,.indica::after{content:"";position:absolute;width:14px;height:14px;pointer-events:none}
+.indica::before{top:-1px;left:-1px;border-top:2px solid var(--cy);border-left:2px solid var(--cy)}
+.indica::after{right:-1px;bottom:-1px;border-bottom:2px solid var(--rd);border-right:2px solid var(--rd)}
+.indica .rotulo{margin:0 0 .4rem;font:700 .72rem var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--cy)}
+.indica p{margin:0 0 .6rem}
+.indica .links{display:flex;flex-wrap:wrap;gap:.6rem;margin:.8rem 0}
+.indica .nota{margin:0;font-size:.85rem}
+
+/* Foto pequena do produto, ao lado do texto (miniatura 165x165, não esticar) */
+.com-foto{display:flex;gap:1.1rem;align-items:flex-start}
+.com-foto>div{flex:1 1 auto;min-width:0}
+.foto-produto{flex:none;width:165px;height:165px;object-fit:contain;background:#fff;border:1px solid rgba(255,255,255,.09)}
+@media(max-width:520px){.com-foto{flex-direction:column}}
+
+/* Duas cores do produto */
+.fotos{display:flex;gap:.5rem;flex:none}
+.fotos .foto-produto{width:100px;height:100px}
+.compra .foto-produto{display:block;margin:0 auto .6rem}
+@media(max-width:520px){.fotos{align-self:flex-start}}
