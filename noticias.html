@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Todas as notícias | Controle Quebrado</title>
+<meta name="description" content="Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações, em ordem de data, com busca.">
+<link rel="canonical" href="https://mozaiam.github.io/noticias.html">
+<link rel="icon" type="image/png" href="icone.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Controle Quebrado">
+<meta property="og:title" content="Todas as notícias | Controle Quebrado">
+<meta property="og:description" content="Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações, em ordem de data, com busca.">
+<meta property="og:url" content="https://mozaiam.github.io/noticias.html">
+<meta property="og:image" content="https://mozaiam.github.io/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0c0a10">
+<link rel="preload" href="fontes/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fontes/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
+/* Cores e fontes do canal (as mesmas da página inicial) */
+:root {
+  --fundo: #0c0a10; --superficie: #17131d; --borda: #2b2433;
+  --texto: #f4f1f6; --texto-suave: #b6adbf; --carmesim: #e3123f; --rosa: #ff5c8a;
+  --titulo: "Bebas Neue", "Arial Narrow", Impact, sans-serif;
+  --corpo: "Barlow", system-ui, sans-serif;
+  color-scheme: dark; box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { color-scheme: dark; } }
+:root[data-theme="dark"] { color-scheme: dark; }
+html { scroll-padding-top: env(safe-area-inset-top, 0px); }
+*, *::before, *::after { box-sizing: inherit; }
+body { margin: 0; background: var(--fundo); color: var(--texto); font: 400 1.125rem/1.7 var(--corpo); }
+a { color: var(--rosa); }
+a:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+.container { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+.topo { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .75rem; padding-top: 1.25rem; padding-bottom: 1.25rem; }
+.logo { font: 1.7rem/1 var(--titulo); color: var(--texto); text-decoration: none; letter-spacing: .03em; }
+.topo a.voltar { color: var(--texto-suave); text-decoration: none; }
+.topo a.voltar:hover { color: var(--texto); }
+main { padding-block: 2rem 3.5rem; }
+h1 { margin: 0 0 .5rem; font: clamp(2.8rem, 9vw, 4.5rem)/1 var(--titulo); letter-spacing: .02em; }
+h1 span { color: var(--carmesim); }
+h2 { margin: 2.25rem 0 .5rem; font: 2rem/1.1 var(--titulo); letter-spacing: .02em; }
+p, li { color: var(--texto-suave); }
+p { margin: 0 0 1rem; }
+.atualizado { font-size: .95rem; }
+.btn { display: inline-block; padding: .8rem 1.4rem; border-radius: 6px; font-weight: 600; text-decoration: none; background: var(--carmesim); color: #fff; transition: background .2s; }
+.btn:hover { background: #b80d33; }
+.btn:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; }
+.rodape { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .75rem; padding-top: 1.5rem; padding-bottom: 2rem; border-top: 1px solid var(--borda); color: var(--texto-suave); font-size: .95rem; }
+.rodape nav { display: flex; flex-wrap: wrap; gap: .4rem 1.25rem; }
+.logo { display: flex; align-items: center; gap: .6rem; }
+.logo img { width: 40px; height: 40px; border-radius: 50%; }
+.topo nav { display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.topo nav a { color: var(--texto-suave); text-decoration: none; }
+.topo nav a:hover { color: var(--texto); }
+/* Cabeçalho e rodapé compartilhados (iguais em todas as páginas) */
+.top,.bot{--h-bg:#0c0a10;--h-line:#2b2433;--h-text:#f4f1f6;--h-mute:#b6adbf;--h-rosa:#ff5c8a;--h-car:#e3123f;font:400 1rem/1.5 "Barlow",system-ui,sans-serif}
+.top a,.bot a{text-decoration:none}
+.top a:focus-visible,.bot a:focus-visible{outline:3px solid var(--h-rosa);outline-offset:3px}
+.top{position:sticky;top:0;z-index:50;background:var(--h-bg);border-bottom:1px solid var(--h-line)}
+.top .wrap,.bot .wrap{max-width:1120px;margin:0 auto;padding:0 1.25rem}
+.bar{display:flex;align-items:center;gap:1.25rem;min-height:4rem;flex-wrap:nowrap;padding-block:.35rem}
+.top .logo{flex:none;white-space:nowrap;display:flex;align-items:center;gap:.6rem;font:1.7rem/1 "Bebas Neue","Arial Narrow",Impact,sans-serif;letter-spacing:.03em;color:var(--h-text)}
+.top .logo img{width:40px;height:40px;border-radius:50%}
+.menu{display:flex;gap:.25rem 1.1rem;flex-wrap:wrap;flex:1 1 auto;min-width:0}
+.menu a{color:var(--h-mute)}
+.menu a:hover,.menu a[aria-current="page"]{color:var(--h-text)}
+.menu a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--h-rosa);text-underline-offset:6px}
+.top .sub{margin-left:auto;white-space:nowrap;flex:none;background:var(--h-car);color:#fff;font-weight:600;padding:.45rem 1rem;border-radius:6px;font-size:.95rem}
+.top .sub:hover{background:#b80d33}
+.bot{border-top:1px solid var(--h-line);padding:1.5rem 0 2rem;color:var(--h-mute);font-size:.95rem;background:var(--h-bg)}
+.bot .wrap{display:flex;flex-wrap:wrap;gap:.75rem 1.5rem;justify-content:space-between}
+.bot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.25rem}
+.bot a{color:var(--h-mute)}
+.bot a:hover{color:var(--h-text)}
+@media(max-width:800px){.top{position:static}.bar{flex-wrap:wrap}.menu{flex:1 1 100%;order:3}.top .sub{margin-left:auto}}
+.chave { display: block; margin: .75rem 0 1rem; padding: .8rem 1rem; background: #05040a; border: 1px solid rgba(62,224,255,.25); border-left: 3px solid var(--cy); font: 500 1rem/1.4 var(--mono); color: #9af0ff; overflow-wrap: anywhere; user-select: all; }
+ol { padding-left: 1.25rem; }
+li { margin: .5rem 0; }
+/* Lista de notícias */
+.busca { width: 100%; max-width: 32rem; padding: .75rem 1rem; font: inherit; color: inherit; background: #0c0a10; border: 1px solid rgba(255,255,255,.18); }
+.busca:focus-visible { outline: 3px solid var(--cy); outline-offset: 2px; }
+.lista-noticias { list-style: none; margin: 1.25rem 0 2rem; padding: 0; display: grid; gap: 1rem; }
+.item { display: grid; grid-template-columns: 200px 1fr; gap: 1rem; padding: 1rem; background: linear-gradient(180deg, rgba(23,19,29,.92), rgba(12,10,16,.92)); border: 1px solid rgba(255,255,255,.09); }
+.item img { width: 200px; height: auto; aspect-ratio: 16/9; object-fit: cover; border: 1px solid rgba(255,255,255,.09); }
+.item .meta { margin: 0 0 .35rem; font: 700 .72rem var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--cy); }
+.item h2 { margin: 0 0 .4rem; font-size: 1.35rem; line-height: 1.2; }
+.item p { margin: 0; }
+.vazio { margin: 1.5rem 0; }
+@media (max-width: 560px) { .item { grid-template-columns: 1fr; } .item img { width: 100%; } }
+</style>
+<link rel="stylesheet" href="tema.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Todas as notícias", "url": "https://mozaiam.github.io/noticias.html", "inLanguage": "pt-BR", "description": "Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações.", "isPartOf": {"@type": "WebSite", "name": "Controle Quebrado", "url": "https://mozaiam.github.io/"}}</script>
+<link rel="alternate" type="application/rss+xml" title="Controle Quebrado" href="https://mozaiam.github.io/feed.xml">
+</head>
+<body>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="index.html"><img src="icone.png" alt="" width="40" height="40">Controle Quebrado</a>
+    <nav class="menu" aria-label="Principal"><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a></nav>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
+  </div>
+</header>
+<main class="container">
+<h1>Todas as <span>notícias</span></h1>
+<p>Lançamentos de Linux, games, emulação e recompilações, do mais novo para o mais antigo. <a href="feed.xml">Assine o feed RSS</a>.</p>
+<p><label class="sr-only" for="busca">Buscar nas notícias</label><input class="busca" id="busca" type="search" placeholder="Buscar: Proton, Steam, PCSX2..." autocomplete="off"></p>
+<p id="contagem" class="sr-only" aria-live="polite"></p>
+<ul class="lista-noticias" id="lista">
+  <li class="item" data-texto="gta vi chega com nota 99 no metacritic, mas só no console o gta vi foi lançado em 19 de novembro para ps5 e xbox series x|s e estreou com nota 99 no metacritic. ainda não há versão para pc confirmada. games">
+    <a href="noticia-gta6-lancamento.html" tabindex="-1" aria-hidden="true"><img src="noticia-gta6.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Games ] · <time datetime="2026-11-20">20 de novembro de 2026</time></p>
+      <h2><a href="noticia-gta6-lancamento.html">GTA VI chega com nota 99 no Metacritic, mas só no console</a></h2>
+      <p>O GTA VI foi lançado em 19 de novembro para PS5 e Xbox Series X|S e estreou com nota 99 no Metacritic. Ainda não há versão para PC confirmada.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="scum ganha suporte oficial no linux pelo proton o jogo de sobrevivência scum agora tem suporte oficial no linux pelo proton, inclusive para entrar em servidores multiplayer. games no linux">
+    <a href="noticia-scum-proton.html" tabindex="-1" aria-hidden="true"><img src="noticia-scum.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Games no Linux ] · <time datetime="2026-11-12">12 de novembro de 2026</time></p>
+      <h2><a href="noticia-scum-proton.html">SCUM ganha suporte oficial no Linux pelo Proton</a></h2>
+      <p>O jogo de sobrevivência SCUM agora tem suporte oficial no Linux pelo Proton, inclusive para entrar em servidores multiplayer.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="steam no linux agora é um aplicativo de 64 bits a atualização estável da steam de 11 de novembro trouxe o cliente para linux em 64 bits, rodando dentro de um contêiner do steam runtime. linux">
+    <a href="noticia-steam-cliente-64-bits.html" tabindex="-1" aria-hidden="true"><img src="noticia-steam64.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Linux ] · <time datetime="2026-11-12">12 de novembro de 2026</time></p>
+      <h2><a href="noticia-steam-cliente-64-bits.html">Steam no Linux agora é um aplicativo de 64 bits</a></h2>
+      <p>A atualização estável da Steam de 11 de novembro trouxe o cliente para Linux em 64 bits, rodando dentro de um contêiner do Steam Runtime.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="proton 11.0-3 está em testes; experimental ganha correções a valve atualizou o proton experimental com correções para jogos do windows no linux, e uma candidata ao proton 11.0-3 está em testes para virar a próxima versão estável. linux">
+    <a href="noticia-proton-11-0-3-testes.html" tabindex="-1" aria-hidden="true"><img src="noticia-proton.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Linux ] · <time datetime="2026-11-10">10 de novembro de 2026</time></p>
+      <h2><a href="noticia-proton-11-0-3-testes.html">Proton 11.0-3 está em testes; Experimental ganha correções</a></h2>
+      <p>A Valve atualizou o Proton Experimental com correções para jogos do Windows no Linux, e uma candidata ao Proton 11.0-3 está em testes para virar a próxima versão estável.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="linux chega perto de 4% na pesquisa da steam no levantamento de outubro de 2026 da valve, o linux ficou com 3,95% dos sistemas, perto da marca de 4%, e o windows com 93,70%. linux">
+    <a href="noticia-steam-linux-quase-4-por-cento.html" tabindex="-1" aria-hidden="true"><img src="noticia-steam.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Linux ] · <time datetime="2026-11-02">2 de novembro de 2026</time></p>
+      <h2><a href="noticia-steam-linux-quase-4-por-cento.html">Linux chega perto de 4% na pesquisa da Steam</a></h2>
+      <p>No levantamento de outubro de 2026 da Valve, o Linux ficou com 3,95% dos sistemas, perto da marca de 4%, e o Windows com 93,70%.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="kernel linux 7.3 chega; veja qual kernel você usa o kernel linux 7.3 foi lançado. para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a ram do sistema. linux">
+    <a href="noticia-kernel-linux-7-3.html" tabindex="-1" aria-hidden="true"><img src="noticia-kernel.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Linux ] · <time datetime="2026-10-19">19 de outubro de 2026</time></p>
+      <h2><a href="noticia-kernel-linux-7-3.html">Kernel Linux 7.3 chega; veja qual kernel você usa</a></h2>
+      <p>O kernel Linux 7.3 foi lançado. Para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da Valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a RAM do sistema.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="linux mint 23 virou linux mint 27 o próximo linux mint, que usava o nome provisório “23 alfa”, passa a se chamar linux mint 27 “adrien”. linux">
+    <a href="noticia-linux-mint-27.html" tabindex="-1" aria-hidden="true"><img src="noticia-mint.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Linux ] · <time datetime="2026-10-14">14 de outubro de 2026</time></p>
+      <h2><a href="noticia-linux-mint-27.html">Linux Mint 23 virou Linux Mint 27</a></h2>
+      <p>O próximo Linux Mint, que usava o nome provisório “23 Alfa”, passa a se chamar Linux Mint 27 “Adrien”.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="ogre battle 64 ganha versões jogáveis no pc o projeto de recompilação de ogre battle 64 já tem versões para baixar, e a mais recente, a 0.8.3, é de 14 de outubro. recompilados">
+    <a href="recomp-ogre-battle-64.html" tabindex="-1" aria-hidden="true"><img src="rec-ogre.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Recompilados ] · <time datetime="2026-10-14">14 de outubro de 2026</time></p>
+      <h2><a href="recomp-ogre-battle-64.html">Ogre Battle 64 ganha versões jogáveis no PC</a></h2>
+      <p>O projeto de recompilação de Ogre Battle 64 já tem versões para baixar, e a mais recente, a 0.8.3, é de 14 de outubro.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="pcsx2 2.8 chega com foco em desempenho o pcsx2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão. emulação">
+    <a href="noticia-pcsx2-2-8.html" tabindex="-1" aria-hidden="true"><img src="noticia-pcsx2.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Emulação ] · <time datetime="2026-08-28">28 de agosto de 2026</time></p>
+      <h2><a href="noticia-pcsx2-2-8.html">PCSX2 2.8 chega com foco em desempenho</a></h2>
+      <p>O PCSX2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="mario kart wiicompiled sai do anúncio e ganha repositório o mario kart wiicompiled, anunciado em 15 de julho como a primeira recompilação estática de um jogo de wii, já tem repositório público com instruções de instalação. recompilados">
+    <a href="recomp-mario-kart-wiicompiled.html" tabindex="-1" aria-hidden="true"><img src="rec-mariokart.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Recompilados ] · <time datetime="2026-07-15">15 de julho de 2026</time></p>
+      <h2><a href="recomp-mario-kart-wiicompiled.html">Mario Kart Wiicompiled sai do anúncio e ganha repositório</a></h2>
+      <p>O Mario Kart Wiicompiled, anunciado em 15 de julho como a primeira recompilação estática de um jogo de Wii, já tem repositório público com instruções de instalação.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="banjo: recompiled chega ao pc, mac e linux um port de banjo-kazooie para pc foi lançado pelo mesmo desenvolvedor da ferramenta n64: recompiled. recompilados">
+    <a href="recomp-banjo-recompiled.html" tabindex="-1" aria-hidden="true"><img src="rec-banjo.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Recompilados ] · <time datetime="2026-01-26">26 de janeiro de 2026</time></p>
+      <h2><a href="recomp-banjo-recompiled.html">Banjo: Recompiled chega ao PC, Mac e Linux</a></h2>
+      <p>Um port de Banjo-Kazooie para PC foi lançado pelo mesmo desenvolvedor da ferramenta N64: Recompiled.</p>
+    </div>
+  </li>
+  <li class="item" data-texto="quest 64 ganha port nativo para pc quest 64 ganhou um port para pc feito com o n64recomp, na versão 0.1. recompilados">
+    <a href="recomp-quest-64.html" tabindex="-1" aria-hidden="true"><img src="rec-quest64.jpg" alt="" width="800" height="450" loading="lazy"></a>
+    <div>
+      <p class="meta">[ Recompilados ] · <time datetime="2026-01-13">13 de janeiro de 2026</time></p>
+      <h2><a href="recomp-quest-64.html">Quest 64 ganha port nativo para PC</a></h2>
+      <p>Quest 64 ganhou um port para PC feito com o N64Recomp, na versão 0.1.</p>
+    </div>
+  </li>
+</ul>
+<p class="vazio" id="vazio" hidden>Nenhuma notícia encontrada para essa busca.</p>
+</main>
+<footer class="bot">
+  <div class="wrap">
+    <span>© 2026 Controle Quebrado</span>
+    <nav aria-label="Rodapé">
+      <a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="feed.xml">RSS</a><a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">YouTube</a>
+    </nav>
+  </div>
+</footer>
+<script>
+(function () {
+  var campo = document.getElementById("busca"), itens = document.querySelectorAll("#lista .item");
+  var vazio = document.getElementById("vazio"), contagem = document.getElementById("contagem");
+  function norm(s) { return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+  function filtrar() {
+    var termo = norm(campo.value.trim()), n = 0;
+    itens.forEach(function (li) {
+      var ok = !termo || norm(li.getAttribute("data-texto")).indexOf(termo) !== -1;
+      li.hidden = !ok; if (ok) n++;
+    });
+    vazio.hidden = n !== 0;
+    contagem.textContent = n + (n === 1 ? " notícia encontrada" : " notícias encontradas");
+  }
+  campo.addEventListener("input", filtrar);
+})();
+</script>
+</body>
+</html>

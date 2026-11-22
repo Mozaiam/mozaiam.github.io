@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>Controle Quebrado</title>
+  <link>https://mozaiam.github.io/</link>
+  <atom:link href="https://mozaiam.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+  <description>Notícias e tutoriais de PC, games, Linux e tecnologia em português.</description>
+  <language>pt-BR</language>
+  <lastBuildDate>Sat, 21 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>GTA VI chega com nota 99 no Metacritic, mas só no console</title>
+    <link>https://mozaiam.github.io/noticia-gta6-lancamento.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-gta6-lancamento.html</guid>
+    <pubDate>Fri, 20 Nov 2026 12:00:00 -0300</pubDate>
+    <category>Games</category>
+    <description>O GTA VI foi lançado em 19 de novembro para PS5 e Xbox Series X|S e estreou com nota 99 no Metacritic. Ainda não há versão para PC confirmada.</description>
+  </item>
+  <item>
+    <title>SCUM ganha suporte oficial no Linux pelo Proton</title>
+    <link>https://mozaiam.github.io/noticia-scum-proton.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-scum-proton.html</guid>
+    <pubDate>Thu, 12 Nov 2026 12:00:00 -0300</pubDate>
+    <category>Games no Linux</category>
+    <description>O jogo de sobrevivência SCUM agora tem suporte oficial no Linux pelo Proton, inclusive para entrar em servidores multiplayer.</description>
+  </item>
+  <item>
+    <title>Steam no Linux agora é um aplicativo de 64 bits</title>
+    <link>https://mozaiam.github.io/noticia-steam-cliente-64-bits.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-steam-cliente-64-bits.html</guid>
+    <pubDate>Thu, 12 Nov 2026 12:00:00 -0300</pubDate>
+    <category>Linux</category>
+    <description>A atualização estável da Steam de 11 de novembro trouxe o cliente para Linux em 64 bits, rodando dentro de um contêiner do Steam Runtime.</description>
+  </item>
+  <item>
+    <title>Proton 11.0-3 está em testes; Experimental ganha correções</title>
+    <link>https://mozaiam.github.io/noticia-proton-11-0-3-testes.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-proton-11-0-3-testes.html</guid>
+    <pubDate>Tue, 10 Nov 2026 12:00:00 -0300</pubDate>
+    <category>Linux</category>
+    <description>A Valve atualizou o Proton Experimental com correções para jogos do Windows no Linux, e uma candidata ao Proton 11.0-3 está em testes para virar a próxima versão estável.</description>
+  </item>
+  <item>
+    <title>Linux chega perto de 4% na pesquisa da Steam</title>
+    <link>https://mozaiam.github.io/noticia-steam-linux-quase-4-por-cento.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-steam-linux-quase-4-por-cento.html</guid>
+    <pubDate>Mon, 02 Nov 2026 12:00:00 -0300</pubDate>
+    <category>Linux</category>
+    <description>No levantamento de outubro de 2026 da Valve, o Linux ficou com 3,95% dos sistemas, perto da marca de 4%, e o Windows com 93,70%.</description>
+  </item>
+  <item>
+    <title>Kernel Linux 7.3 chega; veja qual kernel você usa</title>
+    <link>https://mozaiam.github.io/noticia-kernel-linux-7-3.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-kernel-linux-7-3.html</guid>
+    <pubDate>Mon, 19 Oct 2026 12:00:00 -0300</pubDate>
+    <category>Linux</category>
+    <description>O kernel Linux 7.3 foi lançado. Para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da Valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a RAM do sistema.</description>
+  </item>
+  <item>
+    <title>Linux Mint 23 virou Linux Mint 27</title>
+    <link>https://mozaiam.github.io/noticia-linux-mint-27.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-linux-mint-27.html</guid>
+    <pubDate>Wed, 14 Oct 2026 12:00:00 -0300</pubDate>
+    <category>Linux</category>
+    <description>O próximo Linux Mint, que usava o nome provisório “23 Alfa”, passa a se chamar Linux Mint 27 “Adrien”.</description>
+  </item>
+  <item>
+    <title>Ogre Battle 64 ganha versões jogáveis no PC</title>
+    <link>https://mozaiam.github.io/recomp-ogre-battle-64.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/recomp-ogre-battle-64.html</guid>
+    <pubDate>Wed, 14 Oct 2026 12:00:00 -0300</pubDate>
+    <category>Recompilados</category>
+    <description>O projeto de recompilação de Ogre Battle 64 já tem versões para baixar, e a mais recente, a 0.8.3, é de 14 de outubro.</description>
+  </item>
+  <item>
+    <title>PCSX2 2.8 chega com foco em desempenho</title>
+    <link>https://mozaiam.github.io/noticia-pcsx2-2-8.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-pcsx2-2-8.html</guid>
+    <pubDate>Fri, 28 Aug 2026 12:00:00 -0300</pubDate>
+    <category>Emulação</category>
+    <description>O PCSX2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão.</description>
+  </item>
+  <item>
+    <title>Mario Kart Wiicompiled sai do anúncio e ganha repositório</title>
+    <link>https://mozaiam.github.io/recomp-mario-kart-wiicompiled.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/recomp-mario-kart-wiicompiled.html</guid>
+    <pubDate>Wed, 15 Jul 2026 12:00:00 -0300</pubDate>
+    <category>Recompilados</category>
+    <description>O Mario Kart Wiicompiled, anunciado em 15 de julho como a primeira recompilação estática de um jogo de Wii, já tem repositório público com instruções de instalação.</description>
+  </item>
+  <item>
+    <title>Banjo: Recompiled chega ao PC, Mac e Linux</title>
+    <link>https://mozaiam.github.io/recomp-banjo-recompiled.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/recomp-banjo-recompiled.html</guid>
+    <pubDate>Mon, 26 Jan 2026 12:00:00 -0300</pubDate>
+    <category>Recompilados</category>
+    <description>Um port de Banjo-Kazooie para PC foi lançado pelo mesmo desenvolvedor da ferramenta N64: Recompiled.</description>
+  </item>
+  <item>
+    <title>Quest 64 ganha port nativo para PC</title>
+    <link>https://mozaiam.github.io/recomp-quest-64.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/recomp-quest-64.html</guid>
+    <pubDate>Tue, 13 Jan 2026 12:00:00 -0300</pubDate>
+    <category>Recompilados</category>
+    <description>Quest 64 ganhou um port para PC feito com o N64Recomp, na versão 0.1.</description>
+  </item>
+</channel>
+</rss>

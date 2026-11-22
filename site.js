@@ -12,11 +12,13 @@
   ];
   var RODAPE = [
     ["Sobre", "sobre.html"],
+    ["Notícias", "noticias.html"],
     ["Comandos", "comandos.html"],
     ["Quiz de driver", "quiz-driver.html"],
     ["Indicados", "indicados.html"],
     ["Contato", "contato.html"],
     ["Privacidade", "privacidade.html"],
+    ["RSS", "feed.xml"],
     ["YouTube", "https://www.youtube.com/@controlequebrado_tv"]
   ];
   var YT = "https://www.youtube.com/@controlequebrado_tv";
