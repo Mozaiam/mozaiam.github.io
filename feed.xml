@@ -28,7 +28,7 @@
     <link>https://mozaiam.github.io/noticia-steam-cliente-64-bits.html</link>
     <guid isPermaLink="true">https://mozaiam.github.io/noticia-steam-cliente-64-bits.html</guid>
     <pubDate>Thu, 12 Nov 2026 12:00:00 -0300</pubDate>
-    <category>Linux</category>
+    <category>Games no Linux</category>
     <description>A atualização estável da Steam de 11 de novembro trouxe o cliente para Linux em 64 bits, rodando dentro de um contêiner do Steam Runtime.</description>
   </item>
   <item>
@@ -36,7 +36,7 @@
     <link>https://mozaiam.github.io/noticia-proton-11-0-3-testes.html</link>
     <guid isPermaLink="true">https://mozaiam.github.io/noticia-proton-11-0-3-testes.html</guid>
     <pubDate>Tue, 10 Nov 2026 12:00:00 -0300</pubDate>
-    <category>Linux</category>
+    <category>Proton</category>
     <description>A Valve atualizou o Proton Experimental com correções para jogos do Windows no Linux, e uma candidata ao Proton 11.0-3 está em testes para virar a próxima versão estável.</description>
   </item>
   <item>
@@ -44,7 +44,7 @@
     <link>https://mozaiam.github.io/noticia-steam-linux-quase-4-por-cento.html</link>
     <guid isPermaLink="true">https://mozaiam.github.io/noticia-steam-linux-quase-4-por-cento.html</guid>
     <pubDate>Mon, 02 Nov 2026 12:00:00 -0300</pubDate>
-    <category>Linux</category>
+    <category>Games no Linux</category>
     <description>No levantamento de outubro de 2026 da Valve, o Linux ficou com 3,95% dos sistemas, perto da marca de 4%, e o Windows com 93,70%.</description>
   </item>
   <item>
