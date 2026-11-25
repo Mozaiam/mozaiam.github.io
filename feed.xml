@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Controle Quebrado</title>
+  <title>Controle Quebrado · Games, PC e tecnologia</title>
   <link>https://mozaiam.github.io/</link>
   <atom:link href="https://mozaiam.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-  <description>Notícias e tutoriais de PC, games, Linux e tecnologia em português.</description>
+  <description>Notícias, rumores verificados, descobertas, guias e tutoriais de games, PC, Linux e tecnologia. Conteúdo dos canais Controle Quebrado e Caio Mendonça.</description>
   <language>pt-BR</language>
   <lastBuildDate>Wed, 25 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item><title>Underground 2 Revived: NFSU2 no navegador</title><link>https://mozaiam.github.io/underground-2-revived.html</link><guid isPermaLink="true">https://mozaiam.github.io/underground-2-revived.html</guid><pubDate>Wed, 25 Nov 2026 12:00:00 -0300</pubDate><category>Need for Speed</category><description>Projeto comunitário mantém Need for Speed Underground 2 jogável no navegador com multiplayer e melhorias; o código público foi arquivado, mas o site continua ativo.</description></item>
+  <item><title>GTA VI no PC: port não oficial é derrubado pela Take-Two</title><link>https://mozaiam.github.io/noticia-gta6-lancamento.html</link><guid isPermaLink="true">https://mozaiam.github.io/noticia-gta6-lancamento.html</guid><pubDate>Wed, 25 Nov 2026 12:00:00 -0300</pubDate><category>GTA VI · Vazamentos</category><description>O projeto Leonida tentava recompilar uma build atribuída ao Xbox; uma notificação DMCA levou à remoção de milhares de repositórios.</description></item>
+  <item><title>GTA VI: easter eggs e segredos descobertos pelos jogadores</title><link>https://mozaiam.github.io/noticia-gta6-easter-eggs.html</link><guid isPermaLink="true">https://mozaiam.github.io/noticia-gta6-easter-eggs.html</guid><pubDate>Wed, 25 Nov 2026 12:00:00 -0300</pubDate><category>GTA VI · Descobertas</category><description>Referências a outros jogos, cultura pop e pistas escondidas estão entre as descobertas divulgadas após o lançamento.</description></item>
   <item>
     <title>Proton 11.0-3 chega como versão estável</title>
     <link>https://mozaiam.github.io/noticia-proton-11-0-3-estavel.html</link>

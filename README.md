@@ -1,6 +1,6 @@
 # Controle Quebrado
 
-Site estático do canal [Controle Quebrado](https://www.youtube.com/@controlequebrado_tv) (PC, games, Linux e tecnologia), publicado no GitHub Pages em https://mozaiam.github.io/.
+Portal dos canais [Controle Quebrado](https://www.youtube.com/@controlequebrado_tv) e [Caio Mendonça](https://www.youtube.com/@caiomendonca8509/videos), publicado no GitHub Pages em https://mozaiam.github.io/. Reúne notícias, rumores identificados, descobertas da comunidade, guias e tutoriais sobre games, PC, Linux e tecnologia.
 
 Não há build nem dependências: basta editar os arquivos e enviar para o repositório.
 
@@ -10,7 +10,8 @@ Não há build nem dependências: basta editar os arquivos e enviar para o repos
 |---|---|
 | `index.html` | Página inicial: destaque, vídeos, notícias, guias e apoio |
 | `noticias.html` | Arquivo com todas as notícias e busca |
-| `noticia-*.html` | Notícias de Linux, games e emulação |
+| `noticia-*.html` | Notícias de Linux, games, GTA VI, vazamentos e descobertas |
+| `underground-2-revived.html` | Matéria sobre Need for Speed Underground 2 Revived |
 | `recomp-*.html` | Notícias de recompilações e ports |
 | `bios.html`, `pcsx2-linux-mint.html`, `texturas-hd-pcsx2.html`, `comandos.html`, `quiz-driver.html` | Guias e ferramentas |
 | `indicados.html` | Produtos indicados (links de afiliado) |
@@ -39,3 +40,12 @@ Em `index.html`, procure o comentário `DESTAQUE` e troque imagem, manchete, res
 ## Privacidade
 
 A página inicial usa o Google Analytics 4. Se mudar isso (adicionar a outras páginas, trocar de ferramenta ou colocar anúncios), atualize `privacidade.html`.
+
+## Canais integrados
+
+- Controle Quebrado: https://www.youtube.com/@controlequebrado_tv (PC, Linux, tecnologia e tutoriais).
+- Caio Mendonça: https://www.youtube.com/@caiomendonca8509/videos (games, Need for Speed, atualizações e comunidade).
+
+## Critério editorial para rumores e vazamentos
+
+Identifique sempre o status da informação: confirmação oficial, reportagem atribuída, vazamento com evidências, rumor sem confirmação ou teoria da comunidade. Não publique arquivos vazados, executáveis ou links de distribuição. Atualize matérias antigas em vez de apagar URLs já indexadas.
