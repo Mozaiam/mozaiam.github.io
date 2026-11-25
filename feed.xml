@@ -6,7 +6,15 @@
   <atom:link href="https://mozaiam.github.io/feed.xml" rel="self" type="application/rss+xml"/>
   <description>Notícias e tutoriais de PC, games, Linux e tecnologia em português.</description>
   <language>pt-BR</language>
-  <lastBuildDate>Sat, 21 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <lastBuildDate>Wed, 25 Nov 2026 12:00:00 -0300</lastBuildDate>
+  <item>
+    <title>Proton 11.0-3 chega como versão estável</title>
+    <link>https://mozaiam.github.io/noticia-proton-11-0-3-estavel.html</link>
+    <guid isPermaLink="true">https://mozaiam.github.io/noticia-proton-11-0-3-estavel.html</guid>
+    <pubDate>Wed, 25 Nov 2026 12:00:00 -0300</pubDate>
+    <category>Proton</category>
+    <description>A Valve lançou o Proton 11.0-3 como nova versão estável, com 15 jogos a mais funcionando no Linux e correções de problemas do Proton 11.</description>
+  </item>
   <item>
     <title>GTA VI chega com nota 99 no Metacritic, mas só no console</title>
     <link>https://mozaiam.github.io/noticia-gta6-lancamento.html</link>
