@@ -49,3 +49,8 @@ A página inicial usa o Google Analytics 4. Se mudar isso (adicionar a outras p�
 ## Critério editorial para rumores e vazamentos
 
 Identifique sempre o status da informação: confirmação oficial, reportagem atribuída, vazamento com evidências, rumor sem confirmação ou teoria da comunidade. Não publique arquivos vazados, executáveis ou links de distribuição. Atualize matérias antigas em vez de apagar URLs já indexadas.
+
+
+## Linha editorial ampliada
+
+O portal integra os canais Controle Quebrado e Caio Mendonça. Cobertura: PC, Linux, games, emulação, Need for Speed, projetos comunitários, notícias oficiais, descobertas, rumores e vazamentos. Rumores e informações não confirmadas devem ser identificados claramente e não apresentados como fatos.
