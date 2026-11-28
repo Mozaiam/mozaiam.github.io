@@ -54,3 +54,13 @@ Identifique sempre o status da informação: confirmação oficial, reportagem a
 ## Linha editorial ampliada
 
 O portal integra os canais Controle Quebrado e Caio Mendonça. Cobertura: PC, Linux, games, emulação, Need for Speed, projetos comunitários, notícias oficiais, descobertas, rumores e vazamentos. Rumores e informações não confirmadas devem ser identificados claramente e não apresentados como fatos.
+
+
+## Arquivo de vídeos
+
+A página `videos.html` reúne vídeos dos canais Controle Quebrado e Caio Mendonça. Títulos, canais e datas devem ser conferidos no YouTube antes de novas publicações.
+
+
+## Revisão de 28/11/2026
+
+Consulte `REVISAO-EDITORIAL-2026-11-28.md` para o resumo das atualizações, critérios editoriais e pendências de confirmação dos vídeos. O arquivo `videos.html` reúne os dois canais e há páginas individuais para cada canal.

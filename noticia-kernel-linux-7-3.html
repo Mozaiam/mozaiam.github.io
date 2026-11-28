@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kernel Linux 7.3 chega; veja qual kernel você usa | Controle Quebrado</title>
-<meta name="description" content="O kernel Linux 7.3 foi lançado. Para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da Valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a RAM do sistema.">
-<link rel="canonical" href="https://mozaiam.github.io/noticia-kernel-linux-7-3.html">
-<link rel="icon" type="image/png" href="icone.png">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Controle Quebrado">
-<meta property="og:title" content="Kernel Linux 7.3 chega; veja qual kernel você usa | Controle Quebrado">
-<meta property="og:description" content="O kernel Linux 7.3 foi lançado. Para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da Valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a RAM do sistema.">
-<meta property="og:url" content="https://mozaiam.github.io/noticia-kernel-linux-7-3.html">
-<meta property="og:image" content="https://mozaiam.github.io/noticia-kernel.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0c0a10">
-<link rel="preload" href="fontes/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fontes/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <title>
+   Kernel Linux 7.3 chega à versão 7.3.6; veja como conferir o seu | Controle Quebrado
+  </title>
+  <meta content="A série Linux 7.3 recebeu a versão estável 7.3.6 em 23 de novembro de 2026. Saiba como verificar o kernel instalado e atualizar com segurança." name="description"/>
+  <link href="https://mozaiam.github.io/noticia-kernel-linux-7-3.html" rel="canonical"/>
+  <link href="icone.png" rel="icon" type="image/png"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_BR" property="og:locale"/>
+  <meta content="Controle Quebrado" property="og:site_name"/>
+  <meta content="Kernel Linux 7.3 chega à versão 7.3.6; veja como conferir o seu | Controle Quebrado" property="og:title"/>
+  <meta content="A série Linux 7.3 recebeu a versão estável 7.3.6 em 23 de novembro de 2026. Saiba como verificar o kernel instalado e atualizar com segurança." property="og:description"/>
+  <meta content="https://mozaiam.github.io/noticia-kernel-linux-7-3.html" property="og:url"/>
+  <meta content="https://mozaiam.github.io/noticia-kernel.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="#0c0a10" name="theme-color"/>
+  <link as="font" crossorigin="" href="fontes/BebasNeue-Regular.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="fontes/Barlow-Regular.woff2" rel="preload" type="font/woff2"/>
+  <style>
+   @font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
 /* Cores e fontes do canal (as mesmas da página inicial) */
@@ -84,38 +86,166 @@ p { margin: 0 0 1rem; }
 .bot a{color:var(--h-mute)}
 .bot a:hover{color:var(--h-text)}
 @media(max-width:800px){.top{position:static}.bar{flex-wrap:wrap}.menu{flex:1 1 100%;order:3}.top .sub{margin-left:auto}}
-</style>
-<link rel="stylesheet" href="tema.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Kernel Linux 7.3 chega; veja qual kernel você usa", "image": ["https://mozaiam.github.io/noticia-kernel.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado", "logo": {"@type": "ImageObject", "url": "https://mozaiam.github.io/icone.png"}}, "mainEntityOfPage": "https://mozaiam.github.io/noticia-kernel-linux-7-3.html", "isBasedOn": "https://itsfoss.com/news/linux-kernel-7-3-release/", "inLanguage": "pt-BR", "datePublished": "2026-10-19"}</script>
-<link rel="alternate" type="application/rss+xml" title="Controle Quebrado" href="https://mozaiam.github.io/feed.xml">
-</head>
-<body>
-<header class="top">
-  <div class="wrap bar">
-    <a class="logo" href="index.html"><img src="icone.png" alt="" width="40" height="40">Controle Quebrado</a>
-    <nav class="menu" aria-label="Principal"><a href="index.html#canais">Canais</a><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a></nav>
-    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
-  </div>
-</header>
-<main class="container">
-<p class="atualizado"><a href="index.html#novidades">← Voltar às notícias</a></p>
-<h1 style="font-size:clamp(2.2rem,6vw,3.4rem)">Kernel Linux 7.3 chega; veja qual kernel você usa</h1>
-<p class="atualizado">Linux · 19 de outubro de 2026</p>
-<img src="noticia-kernel.jpg" alt="Kernel Linux 7.3 chega; veja qual kernel você usa" width="800" height="450" style="width:100%;height:auto;border:1px solid #2b2433;margin:.5rem 0 1rem">
-
-<p>O kernel Linux 7.3 foi lançado. Para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da Valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a RAM do sistema.</p>
-<p>O conjunto completo já vem no SteamOS, e o restante ainda vai chegar ao Linux. Para saber qual kernel você usa, rode <code>uname -r</code> no terminal. O sistema da imagem usa o kernel 7.0.</p>
-<p>Fonte: <a href="https://itsfoss.com/news/linux-kernel-7-3-release/" target="_blank" rel="noopener">It’s FOSS</a>. Este texto é um resumo; para os detalhes, leia a matéria original.</p>
-<h2>Veja também</h2>
-<ul><li><a href="comandos.html">Guia rápido de comandos</a></li><li><a href="quiz-driver.html">Qual driver eu instalo?</a></li></ul>
-</main>
-<footer class="bot">
-  <div class="wrap">
-    <span>© 2026 Controle Quebrado</span>
-    <nav aria-label="Rodapé">
-      <a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="feed.xml">RSS</a><a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">Controle Quebrado</a><a href="https://www.youtube.com/@caiomendonca8509/videos" target="_blank" rel="noopener">Caio Mendonça</a>
+  </style>
+  <link href="tema.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Kernel Linux 7.3 chega à versão 7.3.6; veja como conferir o seu", "image": ["https://mozaiam.github.io/noticia-kernel.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado", "logo": {"@type": "ImageObject", "url": "https://mozaiam.github.io/icone.png"}}, "mainEntityOfPage": "https://mozaiam.github.io/noticia-kernel-linux-7-3.html", "isBasedOn": "https://itsfoss.com/news/linux-kernel-7-3-release/", "inLanguage": "pt-BR", "datePublished": "2026-10-19", "description": "A série Linux 7.3 recebeu a versão estável 7.3.6 em 23 de novembro de 2026. Saiba como verificar o kernel instalado e atualizar com segurança.", "dateModified": "2026-11-28"}
+  </script>
+  <link href="https://mozaiam.github.io/feed.xml" rel="alternate" title="Controle Quebrado" type="application/rss+xml"/>
+ </head>
+ <body>
+  <header class="top">
+   <div class="wrap bar">
+    <a class="logo" href="index.html">
+     <img alt="" height="40" src="icone.png" width="40"/>
+     Controle Quebrado
+    </a>
+    <nav aria-label="Principal" class="menu">
+     <a href="index.html">
+      Início
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+     <a href="index.html#emulacao">
+      Emulação
+     </a>
+     <a href="index.html#recompilados">
+      Recompilados
+     </a>
+     <a href="index.html#linux">
+      Linux
+     </a>
+     <a href="underground-2-revived.html">
+      Underground 2
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
     </nav>
-  </div>
-</footer>
-</body>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">
+     Inscreva-se no canal
+    </a>
+   </div>
+  </header>
+  <main class="container">
+   <p class="atualizado">
+    <a href="noticias.html">
+     ← Voltar às notícias
+    </a>
+   </p>
+   <h1>
+    Kernel Linux 7.3 chega à versão 7.3.6; veja como conferir o seu
+   </h1>
+   <p class="atualizado">
+    Linux · Publicado em 19 de outubro de 2026 · Atualizado em 28 de novembro de 2026
+   </p>
+   <p>
+    A série Linux 7.3 foi lançada em outubro e recebeu atualizações de manutenção desde então. Em 23 de novembro de 2026, Greg Kroah-Hartman publicou a versão estável 7.3.6. Por isso, a referência à versão 7.3 sem indicar o ponto de manutenção já estava incompleta.
+   </p>
+   <h2>
+    Como conferir a versão instalada
+   </h2>
+   <p>
+    Abra o terminal e execute:
+   </p>
+   <pre><code>uname -r</code></pre>
+   <p>
+    O comando mostra a versão do kernel em execução. O número disponível no computador depende da distribuição, dos repositórios habilitados e das atualizações instaladas. Uma distribuição pode continuar usando uma série anterior com correções próprias.
+   </p>
+   <h2>
+    Preciso instalar o kernel 7.3 manualmente?
+   </h2>
+   <p>
+    Não necessariamente. Em distribuições como Linux Mint e Ubuntu, o caminho mais seguro para a maioria das pessoas é usar o Gerenciador de Atualizações e os kernels oferecidos pelos repositórios da distribuição. Um kernel mais novo pode melhorar compatibilidade, mas também pode introduzir regressões em determinados equipamentos.
+   </p>
+   <p>
+    Evite instalar pacotes aleatórios de sites de terceiros. Antes de trocar de kernel, crie um ponto de restauração quando disponível e mantenha uma versão anterior funcional no menu de inicialização.
+   </p>
+   <h2>
+    Fontes
+   </h2>
+   <ul>
+    <li>
+     <a href="https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux/+/refs/tags/v7.3.6" rel="noopener" target="_blank">
+      Registro oficial da versão Linux 7.3.6
+     </a>
+    </li>
+    <li>
+     <a href="https://www.kernel.org/" rel="noopener" target="_blank">
+      Kernel.org — versões estáveis e documentação
+     </a>
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Nota:
+    </strong>
+    esta atualização não afirma que todo usuário precise migrar para o kernel 7.3.6. A versão recomendada é aquela mantida e disponibilizada para sua distribuição.
+   </p>
+   <h2>
+    Veja também
+   </h2>
+   <ul>
+    <li>
+     <a href="comandos.html">
+      Guia rápido de comandos
+     </a>
+    </li>
+    <li>
+     <a href="quiz-driver.html">
+      Qual driver eu instalo?
+     </a>
+    </li>
+   </ul>
+  </main>
+  <footer class="bot">
+   <div class="wrap">
+    <span>
+     © 2026 Controle Quebrado
+    </span>
+    <nav aria-label="Rodapé">
+     <a href="sobre.html">
+      Sobre
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+     <a href="quiz-driver.html">
+      Quiz de driver
+     </a>
+     <a href="indicados.html">
+      Indicados
+     </a>
+     <a href="contato.html">
+      Contato
+     </a>
+     <a href="privacidade.html">
+      Privacidade
+     </a>
+     <a href="apoie.html">
+      Apoie
+     </a>
+     <a href="feed.xml">
+      RSS
+     </a>
+     <a href="https://www.youtube.com/@controlequebrado_tv" rel="noopener" target="_blank">
+      Controle Quebrado
+     </a>
+     <a href="https://www.youtube.com/@caiomendonca8509/videos" rel="noopener" target="_blank">
+      Caio Mendonça
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+    </nav>
+   </div>
+  </footer>
+ </body>
 </html>

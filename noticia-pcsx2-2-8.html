@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>PCSX2 2.8 chega com foco em desempenho | Controle Quebrado</title>
-<meta name="description" content="O PCSX2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão.">
-<link rel="canonical" href="https://mozaiam.github.io/noticia-pcsx2-2-8.html">
-<link rel="icon" type="image/png" href="icone.png">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Controle Quebrado">
-<meta property="og:title" content="PCSX2 2.8 chega com foco em desempenho | Controle Quebrado">
-<meta property="og:description" content="O PCSX2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão.">
-<meta property="og:url" content="https://mozaiam.github.io/noticia-pcsx2-2-8.html">
-<meta property="og:image" content="https://mozaiam.github.io/noticia-pcsx2.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0c0a10">
-<link rel="preload" href="fontes/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fontes/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <title>
+   PCSX2 2.8.0: novidades da versão estável e builds de desenvolvimento | Controle Quebrado
+  </title>
+  <meta content="Conheça as principais novidades do PCSX2 2.8.0 e entenda a diferença entre a versão estável e as builds 2.9.x de desenvolvimento." name="description"/>
+  <link href="https://mozaiam.github.io/noticia-pcsx2-2-8.html" rel="canonical"/>
+  <link href="icone.png" rel="icon" type="image/png"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_BR" property="og:locale"/>
+  <meta content="Controle Quebrado" property="og:site_name"/>
+  <meta content="PCSX2 2.8.0: novidades da versão estável e builds de desenvolvimento | Controle Quebrado" property="og:title"/>
+  <meta content="Conheça as principais novidades do PCSX2 2.8.0 e entenda a diferença entre a versão estável e as builds 2.9.x de desenvolvimento." property="og:description"/>
+  <meta content="https://mozaiam.github.io/noticia-pcsx2-2-8.html" property="og:url"/>
+  <meta content="https://mozaiam.github.io/noticia-pcsx2.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="#0c0a10" name="theme-color"/>
+  <link as="font" crossorigin="" href="fontes/BebasNeue-Regular.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="fontes/Barlow-Regular.woff2" rel="preload" type="font/woff2"/>
+  <style>
+   @font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
 /* Cores e fontes do canal (as mesmas da página inicial) */
@@ -84,38 +86,163 @@ p { margin: 0 0 1rem; }
 .bot a{color:var(--h-mute)}
 .bot a:hover{color:var(--h-text)}
 @media(max-width:800px){.top{position:static}.bar{flex-wrap:wrap}.menu{flex:1 1 100%;order:3}.top .sub{margin-left:auto}}
-</style>
-<link rel="stylesheet" href="tema.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "PCSX2 2.8 chega com foco em desempenho", "image": ["https://mozaiam.github.io/noticia-pcsx2.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado", "logo": {"@type": "ImageObject", "url": "https://mozaiam.github.io/icone.png"}}, "mainEntityOfPage": "https://mozaiam.github.io/noticia-pcsx2-2-8.html", "isBasedOn": "https://pcsx2.net/blog/2026/pcsx2-2.8/", "inLanguage": "pt-BR", "datePublished": "2026-08-28"}</script>
-<link rel="alternate" type="application/rss+xml" title="Controle Quebrado" href="https://mozaiam.github.io/feed.xml">
-</head>
-<body>
-<header class="top">
-  <div class="wrap bar">
-    <a class="logo" href="index.html"><img src="icone.png" alt="" width="40" height="40">Controle Quebrado</a>
-    <nav class="menu" aria-label="Principal"><a href="index.html#canais">Canais</a><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a></nav>
-    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
-  </div>
-</header>
-<main class="container">
-<p class="atualizado"><a href="index.html#novidades">← Voltar às notícias</a></p>
-<h1 style="font-size:clamp(2.2rem,6vw,3.4rem)">PCSX2 2.8 chega com foco em desempenho</h1>
-<p class="atualizado">Emulação · 28 de agosto de 2026</p>
-<img src="noticia-pcsx2.jpg" alt="PCSX2 2.8 chega com foco em desempenho" width="800" height="450" style="width:100%;height:auto;border:1px solid #2b2433;margin:.5rem 0 1rem">
-
-<p>O PCSX2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão.</p>
-<p>No Windows, o Direct3D 12 virou o renderizador padrão para placas NVIDIA e AMD, e os requisitos recomendados foram reorganizados em três níveis: mínimo, moderado e pesado.</p>
-<p>Fonte: <a href="https://pcsx2.net/blog/2026/pcsx2-2.8/" target="_blank" rel="noopener">blog oficial do PCSX2</a>. Este texto é um resumo; para os detalhes, leia a matéria original.</p>
-<h2>Veja também</h2>
-<ul><li><a href="pcsx2-linux-mint.html">PCSX2 no Linux Mint</a></li><li><a href="texturas-hd-pcsx2.html">Texturas HD no PCSX2</a></li></ul>
-</main>
-<footer class="bot">
-  <div class="wrap">
-    <span>© 2026 Controle Quebrado</span>
-    <nav aria-label="Rodapé">
-      <a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="feed.xml">RSS</a><a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">Controle Quebrado</a><a href="https://www.youtube.com/@caiomendonca8509/videos" target="_blank" rel="noopener">Caio Mendonça</a>
+  </style>
+  <link href="tema.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "PCSX2 2.8.0: novidades da versão estável e builds de desenvolvimento", "image": ["https://mozaiam.github.io/noticia-pcsx2.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado", "logo": {"@type": "ImageObject", "url": "https://mozaiam.github.io/icone.png"}}, "mainEntityOfPage": "https://mozaiam.github.io/noticia-pcsx2-2-8.html", "isBasedOn": "https://pcsx2.net/blog/2026/pcsx2-2.8/", "inLanguage": "pt-BR", "datePublished": "2026-08-28", "description": "Conheça as principais novidades do PCSX2 2.8.0 e entenda a diferença entre a versão estável e as builds 2.9.x de desenvolvimento.", "dateModified": "2026-11-28"}
+  </script>
+  <link href="https://mozaiam.github.io/feed.xml" rel="alternate" title="Controle Quebrado" type="application/rss+xml"/>
+ </head>
+ <body>
+  <header class="top">
+   <div class="wrap bar">
+    <a class="logo" href="index.html">
+     <img alt="" height="40" src="icone.png" width="40"/>
+     Controle Quebrado
+    </a>
+    <nav aria-label="Principal" class="menu">
+     <a href="index.html">
+      Início
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+     <a href="index.html#emulacao">
+      Emulação
+     </a>
+     <a href="index.html#recompilados">
+      Recompilados
+     </a>
+     <a href="index.html#linux">
+      Linux
+     </a>
+     <a href="underground-2-revived.html">
+      Underground 2
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
     </nav>
-  </div>
-</footer>
-</body>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">
+     Inscreva-se no canal
+    </a>
+   </div>
+  </header>
+  <main class="container">
+   <p class="atualizado">
+    <a href="noticias.html">
+     ← Voltar às notícias
+    </a>
+   </p>
+   <h1>
+    PCSX2 2.8.0: novidades da versão estável e builds de desenvolvimento
+   </h1>
+   <p class="atualizado">
+    Emulação · Publicado em 28 de agosto de 2026 · Atualizado em 28 de novembro de 2026
+   </p>
+   <p>
+    O PCSX2 2.8.0 foi lançado em 28 de agosto de 2026. A atualização trouxe mudanças no instalador, melhorias no motor gráfico, correções de renderização e ajustes de desempenho. O anúncio oficial apresenta exemplos de ganhos em jogos como Need for Speed: Carbon.
+   </p>
+   <h2>
+    Versão estável e versões de desenvolvimento
+   </h2>
+   <p>
+    É importante diferenciar a versão estável 2.8.0 das builds de desenvolvimento 2.9.x. Em 26 de novembro, o repositório oficial já listava builds 2.9.197 como pré-lançamento. Uma build de desenvolvimento pode conter correções recentes, mas não deve ser tratada como a versão estável recomendada para todos.
+   </p>
+   <h2>
+    Qual versão devo usar?
+   </h2>
+   <p>
+    Para quem prioriza previsibilidade, use a versão estável oferecida na página oficial de downloads. Se decidir testar uma build de desenvolvimento, faça backup dos cartões de memória virtuais e das configurações e mantenha uma versão estável disponível para voltar.
+   </p>
+   <h2>
+    Fontes oficiais
+   </h2>
+   <ul>
+    <li>
+     <a href="https://pcsx2.net/blog/2026/pcsx2-2.8/" rel="noopener" target="_blank">
+      Anúncio oficial do PCSX2 2.8.0
+     </a>
+    </li>
+    <li>
+     <a href="https://github.com/PCSX2/pcsx2/releases" rel="noopener" target="_blank">
+      Releases oficiais do PCSX2
+     </a>
+    </li>
+    <li>
+     <a href="https://pcsx2.net/downloads/" rel="noopener" target="_blank">
+      Downloads do PCSX2
+     </a>
+    </li>
+   </ul>
+   <h2>
+    Veja também
+   </h2>
+   <ul>
+    <li>
+     <a href="pcsx2-linux-mint.html">
+      Instalar o PCSX2 no Linux Mint
+     </a>
+    </li>
+    <li>
+     <a href="texturas-hd-pcsx2.html">
+      Texturas HD no PCSX2
+     </a>
+    </li>
+    <li>
+     <a href="bios.html">
+      Como conseguir a BIOS do seu próprio PS2
+     </a>
+    </li>
+   </ul>
+  </main>
+  <footer class="bot">
+   <div class="wrap">
+    <span>
+     © 2026 Controle Quebrado
+    </span>
+    <nav aria-label="Rodapé">
+     <a href="sobre.html">
+      Sobre
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+     <a href="quiz-driver.html">
+      Quiz de driver
+     </a>
+     <a href="indicados.html">
+      Indicados
+     </a>
+     <a href="contato.html">
+      Contato
+     </a>
+     <a href="privacidade.html">
+      Privacidade
+     </a>
+     <a href="apoie.html">
+      Apoie
+     </a>
+     <a href="feed.xml">
+      RSS
+     </a>
+     <a href="https://www.youtube.com/@controlequebrado_tv" rel="noopener" target="_blank">
+      Controle Quebrado
+     </a>
+     <a href="https://www.youtube.com/@caiomendonca8509/videos" rel="noopener" target="_blank">
+      Caio Mendonça
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+    </nav>
+   </div>
+  </footer>
+ </body>
 </html>

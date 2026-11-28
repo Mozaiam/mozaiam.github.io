@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador | Controle Quebrado</title>
-<meta name="description" content="Conheça o Underground 2 Revived, projeto comunitário que leva Need for Speed Underground 2 ao navegador com multiplayer, controles e melhorias.">
-<link rel="canonical" href="https://mozaiam.github.io/underground-2-revived.html">
-<link rel="icon" type="image/png" href="icone.png">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Controle Quebrado">
-<meta property="og:title" content="Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador | Controle Quebrado">
-<meta property="og:description" content="Conheça o Underground 2 Revived, projeto comunitário que leva Need for Speed Underground 2 ao navegador com multiplayer, controles e melhorias.">
-<meta property="og:url" content="https://mozaiam.github.io/underground-2-revived.html">
-<meta property="og:image" content="https://mozaiam.github.io/nfsu2-revived.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0c0a10">
-<link rel="preload" href="fontes/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fontes/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <title>
+   Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador | Controle Quebrado
+  </title>
+  <meta content="Guia atualizado do Underground 2 Revived: recursos do projeto, navegador compatível, WebGPU, multiplayer, arquivamento do código público e cuidados de segurança." name="description"/>
+  <link href="https://mozaiam.github.io/underground-2-revived.html" rel="canonical"/>
+  <link href="icone.png" rel="icon" type="image/png"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_BR" property="og:locale"/>
+  <meta content="Controle Quebrado" property="og:site_name"/>
+  <meta content="Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador | Controle Quebrado" property="og:title"/>
+  <meta content="Guia atualizado do Underground 2 Revived: recursos do projeto, navegador compatível, WebGPU, multiplayer, arquivamento do código público e cuidados de segurança." property="og:description"/>
+  <meta content="https://mozaiam.github.io/underground-2-revived.html" property="og:url"/>
+  <meta content="https://mozaiam.github.io/nfsu2-revived.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="#0c0a10" name="theme-color"/>
+  <link as="font" crossorigin="" href="fontes/BebasNeue-Regular.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="fontes/Barlow-Regular.woff2" rel="preload" type="font/woff2"/>
+  <style>
+   @font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
 /* Cores e fontes do canal (as mesmas da página inicial) */
@@ -84,43 +86,202 @@ p { margin: 0 0 1rem; }
 .bot a{color:var(--h-mute)}
 .bot a:hover{color:var(--h-text)}
 @media(max-width:800px){.top{position:static}.bar{flex-wrap:wrap}.menu{flex:1 1 100%;order:3}.top .sub{margin-left:auto}}
-</style>
-<link rel="stylesheet" href="tema.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador", "image": ["https://mozaiam.github.io/nfsu2-revived.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado", "logo": {"@type": "ImageObject", "url": "https://mozaiam.github.io/icone.png"}}, "mainEntityOfPage": "https://mozaiam.github.io/underground-2-revived.html", "inLanguage": "pt-BR", "datePublished": "2026-11-25", "dateModified": "2026-11-25"}</script>
-<link rel="alternate" type="application/rss+xml" title="Controle Quebrado" href="https://mozaiam.github.io/feed.xml">
-</head>
-<body>
-<header class="top">
-  <div class="wrap bar">
-    <a class="logo" href="index.html"><img src="icone.png" alt="" width="40" height="40">Controle Quebrado</a>
-    <nav class="menu" aria-label="Principal"><a href="index.html#canais">Canais</a><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a></nav>
-    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
-  </div>
-</header>
-<main class="container">
-<p class="atualizado"><a href="noticias.html">← Voltar às notícias</a></p>
-<h1 style="font-size:clamp(2.2rem,6vw,3.4rem)">Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador</h1>
-<p class="atualizado">Need for Speed · 25 de novembro de 2026 · Atualizado em 25 de novembro de 2026</p>
-<img src="nfsu2-revived.jpg" alt="Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador" width="1000" height="563" style="width:100%;height:auto;border:1px solid #2b2433;margin:.5rem 0 1rem">
-<p>O Underground 2 Revived é um projeto de fãs que permite jogar Need for Speed: Underground 2 diretamente em navegadores compatíveis, como Chrome e Firefox. A proposta é preservar a experiência de Bayview e acrescentar recursos online, sem exigir que o jogador instale o jogo da forma tradicional.</p>
-<p>O projeto recompila o código x86 do jogo para C e depois para WebAssembly. A camada gráfica usa WebGPU e o áudio usa Web Audio. Segundo a página oficial, a experiência oferece tela widescreen, taxa de até 120 quadros por segundo, exploração livre, corridas online, suporte a controles, volantes e comandos por toque.</p>
-<p>Entre os recursos disponíveis estão modo online, free roam com outros jogadores, crews, salvamentos na nuvem, suporte a controles e opções gráficas. A página também informa que as músicas originais EA Trax não vêm incluídas. O jogador pode adicionar sua própria música.</p>
-<p>Uma observação importante: o site informa que é necessário fornecer uma cópia própria do jogo. O projeto não é afiliado nem endossado pela Electronic Arts. Portanto, não é correto apresentá-lo como um relançamento oficial da EA.</p>
-<p>O desenvolvimento também mudou de formato. O repositório público foi arquivado em 9 de novembro de 2026 e as atualizações passaram a continuar de forma privada. Isso não significa que o jogo tenha sido desligado: o site nfsu2.xyz continua funcionando e recebendo atualizações, segundo a documentação pública do projeto.</p>
-<p>Para quem acompanha o canal Caio Mendonça, o Revived abre espaço para vídeos de desempenho, configurações para PCs modestos, multiplayer, comparação com a versão original e novidades da comunidade. Você pode experimentar o projeto diretamente no site oficial.</p>
-<h2>Fontes e referências</h2>
-<p><a href="https://nfsu2.xyz/" target="_blank" rel="noopener">Underground 2 Revived (site oficial)</a>; <a href="https://github.com/th0mk/nfsu2-web" target="_blank" rel="noopener">repositório e documentação do projeto</a>; <a href="https://isitported.com/news/2026/11/nfs-underground-2-browser-source-archived/" target="_blank" rel="noopener">Is It Ported: arquivamento do código público</a>.</p>
-<p><strong>Transparência editorial:</strong> informações oficiais, relatos jornalísticos, vazamentos e rumores são identificados separadamente. Alegações não confirmadas não devem ser tratadas como fatos.</p>
-<h2>Veja também</h2>
-<ul><li><a href="noticia-gta6-lancamento.html">GTA VI: tentativa de port não oficial para PC</a></li><li><a href="noticia-gta6-easter-eggs.html">GTA VI: descobertas e easter eggs</a></li><li><a href="underground-2-revived.html">Underground 2 Revived: NFSU2 no navegador</a></li></ul>
-</main>
-<footer class="bot">
-  <div class="wrap">
-    <span>© 2026 Controle Quebrado</span>
-    <nav aria-label="Rodapé">
-      <a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="feed.xml">RSS</a><a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">Controle Quebrado</a><a href="https://www.youtube.com/@caiomendonca8509/videos" target="_blank" rel="noopener">Caio Mendonça</a>
+  </style>
+  <link href="tema.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "NewsArticle", "headline": "Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador", "image": ["https://mozaiam.github.io/nfsu2-revived.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado", "logo": {"@type": "ImageObject", "url": "https://mozaiam.github.io/icone.png"}}, "mainEntityOfPage": "https://mozaiam.github.io/underground-2-revived.html", "inLanguage": "pt-BR", "datePublished": "2026-11-25", "dateModified": "2026-11-28", "description": "Guia atualizado do Underground 2 Revived: recursos do projeto, navegador compatível, WebGPU, multiplayer, arquivamento do código público e cuidados de segurança."}
+  </script>
+  <link href="https://mozaiam.github.io/feed.xml" rel="alternate" title="Controle Quebrado" type="application/rss+xml"/>
+ </head>
+ <body>
+  <header class="top">
+   <div class="wrap bar">
+    <a class="logo" href="index.html">
+     <img alt="" height="40" src="icone.png" width="40"/>
+     Controle Quebrado
+    </a>
+    <nav aria-label="Principal" class="menu">
+     <a href="index.html">
+      Início
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+     <a href="index.html#emulacao">
+      Emulação
+     </a>
+     <a href="index.html#recompilados">
+      Recompilados
+     </a>
+     <a href="index.html#linux">
+      Linux
+     </a>
+     <a href="underground-2-revived.html">
+      Underground 2
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
     </nav>
-  </div>
-</footer>
-</body>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">
+     Inscreva-se no canal
+    </a>
+   </div>
+  </header>
+  <main class="container">
+   <p class="atualizado">
+    <a href="noticias.html">
+     ← Voltar às notícias
+    </a>
+   </p>
+   <h1>
+    Underground 2 Revived: como jogar Need for Speed Underground 2 pelo navegador
+   </h1>
+   <p class="atualizado">
+    Need for Speed · Publicado em 25 de novembro de 2026 · Revisado em 28 de novembro de 2026
+   </p>
+   <p>
+    Underground 2 Revived é um projeto comunitário que permite jogar Need for Speed: Underground 2 no navegador pelo endereço
+    <a href="https://nfsu2.xyz/" rel="noopener" target="_blank">
+     nfsu2.xyz
+    </a>
+    . O projeto usa o código do jogo de PC recompilado para WebAssembly e renderização WebGPU; não é um relançamento oficial da Electronic Arts.
+   </p>
+   <h2>
+    O que o projeto oferece
+   </h2>
+   <ul>
+    <li>
+     Execução no navegador, sem instalar um cliente tradicional.
+    </li>
+    <li>
+     Exploração livre (free roam) e recursos online, incluindo corridas e encontros com outros jogadores.
+    </li>
+    <li>
+     Suporte a teclado, controles e, em dispositivos compatíveis, comandos por toque.
+    </li>
+    <li>
+     Opções gráficas e tela widescreen; a taxa de quadros depende do navegador e do hardware.
+    </li>
+    <li>
+     Salvamento local e opções de backup/sincronização descritas pelo próprio projeto.
+    </li>
+   </ul>
+   <h2>
+    Como começar
+   </h2>
+   <ol>
+    <li>
+     Abra o site oficial
+     <a href="https://nfsu2.xyz/" rel="noopener" target="_blank">
+      nfsu2.xyz
+     </a>
+     diretamente, evitando cópias e páginas que oferecem instaladores desconhecidos.
+    </li>
+    <li>
+     Use uma versão atualizada de Chrome ou Firefox com suporte a WebGPU.
+    </li>
+    <li>
+     Leia as instruções e os avisos exibidos pelo próprio site antes de iniciar.
+    </li>
+    <li>
+     Na primeira execução, aguarde o carregamento dos dados e evite fechar a aba durante a preparação.
+    </li>
+   </ol>
+   <h2>
+    O repositório público foi arquivado?
+   </h2>
+   <p>
+    Sim. O repositório
+    <a href="https://github.com/th0mk/nfsu2-web" rel="noopener" target="_blank">
+     th0mk/nfsu2-web
+    </a>
+    foi arquivado em 9 de novembro de 2026 e ficou somente para leitura. O README informa que o site nfsu2.xyz continua funcionando e recebendo atualizações, enquanto o desenvolvimento passou a ocorrer de forma privada. Arquivamento do repositório público não significa encerramento do serviço.
+   </p>
+   <h2>
+    Legalidade e segurança
+   </h2>
+   <p>
+    O projeto se identifica como iniciativa de fãs, sem afiliação ou endosso da EA. Não hospedamos arquivos do jogo, imagens de disco, executáveis ou instaladores. Desconfie de páginas de terceiros que prometem “baixar o Revived” ou pedem credenciais. Consulte os termos e as instruções do projeto e respeite os direitos dos titulares.
+   </p>
+   <h2>
+    Vídeo relacionado
+   </h2>
+   <p>
+    <a href="https://youtu.be/G9yqnwaBkyM" rel="noopener" target="_blank">
+     NFSU2 — Todas as novidades da atualização
+    </a>
+    , do canal Caio Mendonça (associação editorial pelo tema; confirme o canal na página do vídeo).
+   </p>
+   <h2>
+    Fontes
+   </h2>
+   <ul>
+    <li>
+     <a href="https://nfsu2.xyz/" rel="noopener" target="_blank">
+      Site do Underground 2 Revived
+     </a>
+    </li>
+    <li>
+     <a href="https://github.com/th0mk/nfsu2-web" rel="noopener" target="_blank">
+      Repositório e comunicado de arquivamento
+     </a>
+    </li>
+   </ul>
+   <p>
+    <strong>
+     Transparência editorial:
+    </strong>
+    recursos e compatibilidade podem mudar sem aviso. Consulte o próprio projeto para as instruções atuais.
+   </p>
+  </main>
+  <footer class="bot">
+   <div class="wrap">
+    <span>
+     © 2026 Controle Quebrado
+    </span>
+    <nav aria-label="Rodapé">
+     <a href="sobre.html">
+      Sobre
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+     <a href="quiz-driver.html">
+      Quiz de driver
+     </a>
+     <a href="indicados.html">
+      Indicados
+     </a>
+     <a href="contato.html">
+      Contato
+     </a>
+     <a href="privacidade.html">
+      Privacidade
+     </a>
+     <a href="apoie.html">
+      Apoie
+     </a>
+     <a href="feed.xml">
+      RSS
+     </a>
+     <a href="https://www.youtube.com/@controlequebrado_tv" rel="noopener" target="_blank">
+      Controle Quebrado
+     </a>
+     <a href="https://www.youtube.com/@caiomendonca8509/videos" rel="noopener" target="_blank">
+      Caio Mendonça
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+    </nav>
+   </div>
+  </footer>
+ </body>
 </html>

@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Guia rápido de comandos | Controle Quebrado</title>
-<meta name="description" content="Guia rápido de comandos do Linux Mint para jogos e emulação, com botão de copiar: sistema, drivers, AppImage, Flatpak e pedido de ajuda.">
-<link rel="canonical" href="https://mozaiam.github.io/comandos.html">
-<link rel="icon" type="image/png" href="icone.png">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Controle Quebrado">
-<meta property="og:title" content="Guia rápido de comandos | Controle Quebrado">
-<meta property="og:description" content="Guia rápido de comandos do Linux Mint para jogos e emulação, com botão de copiar: sistema, drivers, AppImage, Flatpak e pedido de ajuda.">
-<meta property="og:url" content="https://mozaiam.github.io/comandos.html">
-<meta property="og:image" content="https://mozaiam.github.io/preview.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0c0a10">
-<link rel="preload" href="fontes/BebasNeue-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fontes/Barlow-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<style>
-@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <title>
+   Guia rápido de comandos | Controle Quebrado
+  </title>
+  <meta content="Guia rápido de comandos do Linux Mint para jogos e emulação, com botão de copiar: sistema, drivers, AppImage, Flatpak e pedido de ajuda." name="description"/>
+  <link href="https://mozaiam.github.io/comandos.html" rel="canonical"/>
+  <link href="icone.png" rel="icon" type="image/png"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_BR" property="og:locale"/>
+  <meta content="Controle Quebrado" property="og:site_name"/>
+  <meta content="Guia rápido de comandos | Controle Quebrado" property="og:title"/>
+  <meta content="Guia rápido de comandos do Linux Mint para jogos e emulação, com botão de copiar: sistema, drivers, AppImage, Flatpak e pedido de ajuda." property="og:description"/>
+  <meta content="https://mozaiam.github.io/comandos.html" property="og:url"/>
+  <meta content="https://mozaiam.github.io/preview.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="#0c0a10" name="theme-color"/>
+  <link as="font" crossorigin="" href="fontes/BebasNeue-Regular.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="fontes/Barlow-Regular.woff2" rel="preload" type="font/woff2"/>
+  <style>
+   @font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
 /* Cores e fontes do canal (as mesmas da página inicial) */
@@ -94,82 +96,351 @@ li { margin: .75rem 0; }
 .bot a{color:var(--h-mute)}
 .bot a:hover{color:var(--h-text)}
 @media(max-width:800px){.top{position:static}.bar{flex-wrap:wrap}.menu{flex:1 1 100%;order:3}.top .sub{margin-left:auto}}
-</style>
-<link rel="stylesheet" href="tema.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Guia rápido de comandos", "image": ["https://mozaiam.github.io/preview.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado"}, "mainEntityOfPage": "https://mozaiam.github.io/comandos.html", "inLanguage": "pt-BR"}</script>
-<link rel="alternate" type="application/rss+xml" title="Controle Quebrado" href="https://mozaiam.github.io/feed.xml">
-</head>
-<body>
-<header class="top">
-  <div class="wrap bar">
-    <a class="logo" href="index.html"><img src="icone.png" alt="" width="40" height="40">Controle Quebrado</a>
-    <nav class="menu" aria-label="Principal"><a href="index.html#canais">Canais</a><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html" aria-current="page">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a></nav>
-    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
-  </div>
-</header>
-<main class="container">
-<h1>Guia rápido de <span>comandos</span></h1>
-<p>Os comandos do Linux Mint mais usados nos tutoriais do canal. Abra o terminal com <strong>Ctrl + Alt + T</strong>, clique em Copiar e cole.</p>
-<h2 id="sistema">Sistema</h2>
-<p><strong>Atualizar o sistema.</strong> Atualiza a lista de pacotes e os programas instalados.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> sudo apt update &amp;&amp; sudo apt upgrade</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Limpar pacotes que sobraram.</strong> Remove pacotes que não são mais necessários.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> sudo apt autoremove</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Atualizar os programas Flatpak.</strong> Atualiza tudo o que foi instalado pelo Flatpak.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> flatpak update</code></pre><button type="button" class="copiar">Copiar</button></div>
-<h2 id="drivers">Drivers de vídeo</h2>
-<p><strong>Ver qual é a sua placa de vídeo.</strong> Mostra o modelo da placa.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> lspci | grep -E "VGA|3D"</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Ver os drivers NVIDIA disponíveis.</strong> Mostra os drivers e qual é o recomendado.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> ubuntu-drivers devices</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Instalar o driver NVIDIA recomendado.</strong> Depois da instalação, reinicie o PC.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> sudo ubuntu-drivers autoinstall
-<span class="prompt">$</span> sudo reboot</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Conferir o driver NVIDIA.</strong> Funciona só em placas NVIDIA, depois de reiniciar.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> nvidia-smi</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Suporte ao Vulkan em AMD e Intel.</strong> O driver já vem no sistema; este pacote completa o suporte ao Vulkan.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> sudo apt install mesa-vulkan-drivers</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Testar o Vulkan.</strong> Vale para todas as placas.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> sudo apt install vulkan-tools
-<span class="prompt">$</span> vulkaninfo --summary</code></pre><button type="button" class="copiar">Copiar</button></div>
-<h2 id="appimage">AppImage</h2>
-<p><strong>Dar permissão para executar.</strong> Rode na pasta onde o arquivo está. O * completa o nome da versão.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> chmod +x pcsx2-*.AppImage</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Abrir o AppImage.</strong> Também na pasta do arquivo.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> ./pcsx2-*.AppImage</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Instalar a biblioteca que o AppImage usa.</strong> Para o Linux Mint 22 ou mais novo. No Mint 21 o pacote se chama libfuse2. Não instale o pacote fuse.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> sudo apt install libfuse2t64</code></pre><button type="button" class="copiar">Copiar</button></div>
-<h2 id="flatpak">Flatpak (PCSX2)</h2>
-<p><strong>Instalar o PCSX2.</strong> Instala pelo Flathub.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> flatpak install flathub net.pcsx2.PCSX2</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Abrir o PCSX2.</strong> Abre o emulador instalado pelo Flatpak.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> flatpak run net.pcsx2.PCSX2</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Atualizar só o PCSX2.</strong> Não mexe nos outros programas.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> flatpak update net.pcsx2.PCSX2</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Ver o que está instalado.</strong> Lista os programas Flatpak.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> flatpak list</code></pre><button type="button" class="copiar">Copiar</button></div>
-<p><strong>Desinstalar o PCSX2.</strong> Remove o emulador instalado pelo Flatpak.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> flatpak uninstall net.pcsx2.PCSX2</code></pre><button type="button" class="copiar">Copiar</button></div>
-<h2 id="ajuda">Informações para pedir ajuda</h2>
-<p><strong>Dados do seu sistema.</strong> Copie o resultado e cole no comentário do vídeo. Informe também a versão do PCSX2 e o nome do jogo. O nvidia-smi só funciona em placas NVIDIA.</p>
-<div class="bloco"><pre><code><span class="prompt">$</span> cat /etc/os-release
+  </style>
+  <link href="tema.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "TechArticle", "headline": "Guia rápido de comandos", "image": ["https://mozaiam.github.io/preview.jpg"], "author": {"@type": "Person", "name": "Caio Mendonça"}, "publisher": {"@type": "Organization", "name": "Controle Quebrado"}, "mainEntityOfPage": "https://mozaiam.github.io/comandos.html", "inLanguage": "pt-BR"}
+  </script>
+  <link href="https://mozaiam.github.io/feed.xml" rel="alternate" title="Controle Quebrado" type="application/rss+xml"/>
+ </head>
+ <body>
+  <header class="top">
+   <div class="wrap bar">
+    <a class="logo" href="index.html">
+     <img alt="" height="40" src="icone.png" width="40"/>
+     Controle Quebrado
+    </a>
+    <nav aria-label="Principal" class="menu">
+     <a href="index.html">
+      Início
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+     <a href="index.html#emulacao">
+      Emulação
+     </a>
+     <a href="index.html#recompilados">
+      Recompilados
+     </a>
+     <a href="index.html#linux">
+      Linux
+     </a>
+     <a href="underground-2-revived.html">
+      Underground 2
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+    </nav>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">
+     Inscreva-se no canal
+    </a>
+   </div>
+  </header>
+  <main class="container">
+   <h1>
+    Guia rápido de
+    <span>
+     comandos
+    </span>
+   </h1>
+   <p>
+    Os comandos do Linux Mint mais usados nos tutoriais do canal. Abra o terminal com
+    <strong>
+     Ctrl + Alt + T
+    </strong>
+    , clique em Copiar e cole.
+   </p>
+   <h2 id="sistema">
+    Sistema
+   </h2>
+   <p>
+    <strong>
+     Atualizar o sistema.
+    </strong>
+    Atualiza a lista de pacotes e os programas instalados.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> sudo apt update &amp;&amp; sudo apt upgrade</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Limpar pacotes que sobraram.
+    </strong>
+    Remove pacotes que não são mais necessários.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> sudo apt autoremove</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Atualizar os programas Flatpak.
+    </strong>
+    Atualiza tudo o que foi instalado pelo Flatpak.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> flatpak update</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <h2 id="drivers">
+    Drivers de vídeo
+   </h2>
+   <p>
+    <strong>
+     Ver qual é a sua placa de vídeo.
+    </strong>
+    Mostra o modelo da placa.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> lspci | grep -E "VGA|3D"</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Ver os drivers NVIDIA disponíveis.
+    </strong>
+    Mostra os drivers e qual é o recomendado.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> ubuntu-drivers devices</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Instalar o driver NVIDIA recomendado.
+    </strong>
+    Depois da instalação, reinicie o PC.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> sudo ubuntu-drivers autoinstall
+<span class="prompt">$</span> sudo reboot</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Conferir o driver NVIDIA.
+    </strong>
+    Funciona só em placas NVIDIA, depois de reiniciar.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> nvidia-smi</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Suporte ao Vulkan em AMD e Intel.
+    </strong>
+    O driver já vem no sistema; este pacote completa o suporte ao Vulkan.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> sudo apt install mesa-vulkan-drivers</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Testar o Vulkan.
+    </strong>
+    Vale para todas as placas.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> sudo apt install vulkan-tools
+<span class="prompt">$</span> vulkaninfo --summary</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <h2 id="appimage">
+    AppImage
+   </h2>
+   <p>
+    <strong>
+     Dar permissão para executar.
+    </strong>
+    Rode na pasta onde o arquivo está. O * completa o nome da versão.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> chmod +x pcsx2-*.AppImage</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Abrir o AppImage.
+    </strong>
+    Também na pasta do arquivo.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> ./pcsx2-*.AppImage</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Instalar a biblioteca que o AppImage usa.
+    </strong>
+    Para o Linux Mint 22 ou mais novo. No Mint 21 o pacote se chama libfuse2. Não instale o pacote fuse.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> sudo apt install libfuse2t64</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <h2 id="flatpak">
+    Flatpak (PCSX2)
+   </h2>
+   <p>
+    <strong>
+     Instalar o PCSX2.
+    </strong>
+    Instala pelo Flathub.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> flatpak install flathub net.pcsx2.PCSX2</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Abrir o PCSX2.
+    </strong>
+    Abre o emulador instalado pelo Flatpak.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> flatpak run net.pcsx2.PCSX2</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Atualizar só o PCSX2.
+    </strong>
+    Não mexe nos outros programas.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> flatpak update net.pcsx2.PCSX2</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Ver o que está instalado.
+    </strong>
+    Lista os programas Flatpak.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> flatpak list</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <p>
+    <strong>
+     Desinstalar o PCSX2.
+    </strong>
+    Remove o emulador instalado pelo Flatpak.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> flatpak uninstall net.pcsx2.PCSX2</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+   <h2 id="ajuda">
+    Informações para pedir ajuda
+   </h2>
+   <p>
+    <strong>
+     Dados do seu sistema.
+    </strong>
+    Copie o resultado e cole no comentário do vídeo. Informe também a versão do PCSX2 e o nome do jogo. O nvidia-smi só funciona em placas NVIDIA.
+   </p>
+   <div class="bloco">
+    <pre><code><span class="prompt">$</span> cat /etc/os-release
 <span class="prompt">$</span> uname -r
 <span class="prompt">$</span> lspci | grep -E "VGA|3D"
 <span class="prompt">$</span> nvidia-smi
 <span class="prompt">$</span> free -h
-<span class="prompt">$</span> echo $XDG_SESSION_TYPE</code></pre><button type="button" class="copiar">Copiar</button></div>
-
-</main>
-<footer class="bot">
-  <div class="wrap">
-    <span>© 2026 Controle Quebrado</span>
+<span class="prompt">$</span> echo $XDG_SESSION_TYPE</code></pre>
+    <button class="copiar" type="button">
+     Copiar
+    </button>
+   </div>
+  </main>
+  <footer class="bot">
+   <div class="wrap">
+    <span>
+     © 2026 Controle Quebrado
+    </span>
     <nav aria-label="Rodapé">
-      <a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="feed.xml">RSS</a><a href="https://www.youtube.com/@controlequebrado_tv" target="_blank" rel="noopener">Controle Quebrado</a><a href="https://www.youtube.com/@caiomendonca8509/videos" target="_blank" rel="noopener">Caio Mendonça</a>
+     <a href="sobre.html">
+      Sobre
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+     <a href="quiz-driver.html">
+      Quiz de driver
+     </a>
+     <a href="indicados.html">
+      Indicados
+     </a>
+     <a href="contato.html">
+      Contato
+     </a>
+     <a href="privacidade.html">
+      Privacidade
+     </a>
+     <a href="apoie.html">
+      Apoie
+     </a>
+     <a href="feed.xml">
+      RSS
+     </a>
+     <a href="https://www.youtube.com/@controlequebrado_tv" rel="noopener" target="_blank">
+      Controle Quebrado
+     </a>
+     <a href="https://www.youtube.com/@caiomendonca8509/videos" rel="noopener" target="_blank">
+      Caio Mendonça
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
     </nav>
-  </div>
-</footer>
-<script>
-// Botões "Copiar": copiam só os comandos, sem o "$" do início
+   </div>
+  </footer>
+  <script>
+   // Botões "Copiar": copiam só os comandos, sem o "$" do início
 document.querySelectorAll('.copiar').forEach(function (botao) {
   botao.addEventListener('click', function () {
     var codigo = botao.parentNode.querySelector('code').cloneNode(true);
@@ -196,6 +467,6 @@ function copiarAntigo(texto) {
   campo.remove();
   return ok;
 }
-</script>
-</body>
+  </script>
+ </body>
 </html>

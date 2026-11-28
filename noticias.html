@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<title>Todas as notícias | Controle Quebrado</title>
-<meta content="Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações, em ordem de data, com busca." name="description"/>
-<link href="https://mozaiam.github.io/noticias.html" rel="canonical"/>
-<link href="icone.png" rel="icon" type="image/png"/>
-<meta content="website" property="og:type"/>
-<meta content="pt_BR" property="og:locale"/>
-<meta content="Controle Quebrado" property="og:site_name"/>
-<meta content="Todas as notícias | Controle Quebrado" property="og:title"/>
-<meta content="Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações, em ordem de data, com busca." property="og:description"/>
-<meta content="https://mozaiam.github.io/noticias.html" property="og:url"/>
-<meta content="https://mozaiam.github.io/preview.jpg" property="og:image"/>
-<meta content="1200" property="og:image:width"/>
-<meta content="630" property="og:image:height"/>
-<meta content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado" property="og:image:alt"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="#0c0a10" name="theme-color"/>
-<link as="font" crossorigin="" href="fontes/BebasNeue-Regular.woff2" rel="preload" type="font/woff2"/>
-<link as="font" crossorigin="" href="fontes/Barlow-Regular.woff2" rel="preload" type="font/woff2"/>
-<style>
-@font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+  <title>
+   Todas as notícias | Controle Quebrado
+  </title>
+  <meta content="Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações, em ordem de data, com busca." name="description"/>
+  <link href="https://mozaiam.github.io/noticias.html" rel="canonical"/>
+  <link href="icone.png" rel="icon" type="image/png"/>
+  <meta content="website" property="og:type"/>
+  <meta content="pt_BR" property="og:locale"/>
+  <meta content="Controle Quebrado" property="og:site_name"/>
+  <meta content="Todas as notícias | Controle Quebrado" property="og:title"/>
+  <meta content="Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações, em ordem de data, com busca." property="og:description"/>
+  <meta content="https://mozaiam.github.io/noticias.html" property="og:url"/>
+  <meta content="https://mozaiam.github.io/preview.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="630" property="og:image:height"/>
+  <meta content="Controle Quebrado: PC, games, Linux e tecnologia, com o mascote encapuzado segurando um controle rachado" property="og:image:alt"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="#0c0a10" name="theme-color"/>
+  <link as="font" crossorigin="" href="fontes/BebasNeue-Regular.woff2" rel="preload" type="font/woff2"/>
+  <link as="font" crossorigin="" href="fontes/Barlow-Regular.woff2" rel="preload" type="font/woff2"/>
+  <style>
+   @font-face { font-family: "Bebas Neue"; src: url("fontes/BebasNeue-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-Regular.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
 @font-face { font-family: "Barlow"; src: url("fontes/Barlow-SemiBold.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; }
 /* Cores e fontes do canal (as mesmas da página inicial) */
@@ -99,138 +100,397 @@ li { margin: .5rem 0; }
 .item p { margin: 0; }
 .vazio { margin: 1.5rem 0; }
 @media (max-width: 560px) { .item { grid-template-columns: 1fr; } .item img { width: 100%; } }
-</style>
-<link href="tema.css" rel="stylesheet"/>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Todas as notícias", "url": "https://mozaiam.github.io/noticias.html", "inLanguage": "pt-BR", "description": "Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações.", "isPartOf": {"@type": "WebSite", "name": "Controle Quebrado", "url": "https://mozaiam.github.io/"}}</script>
-<link href="https://mozaiam.github.io/feed.xml" rel="alternate" title="Controle Quebrado" type="application/rss+xml"/>
-</head>
-<body>
-<header class="top">
-<div class="wrap bar">
-<a class="logo" href="index.html"><img alt="" height="40" src="icone.png" width="40"/>Controle Quebrado</a>
-<nav aria-label="Principal" class="menu"><a href="index.html#canais">Canais</a><a href="index.html#videos">Vídeos</a><a href="index.html#emulacao">Emulação</a><a href="index.html#recompilados">Recompilados</a><a href="index.html#linux">Linux</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a></nav>
-<a class="sub" href="https://www.youtube.com/@controlequebrado_tv">Inscreva-se no canal</a>
-</div>
-</header>
-<main class="container">
-<h1>Todas as <span>notícias</span></h1>
-<p>Lançamentos de Linux, games, emulação e recompilações, do mais novo para o mais antigo. <a href="feed.xml">Assine o feed RSS</a>.</p>
-<p><label class="sr-only" for="busca">Buscar nas notícias</label><input autocomplete="off" class="busca" id="busca" placeholder="Buscar: Proton, Steam, PCSX2..." type="search"/></p>
-<p aria-live="polite" class="sr-only" id="contagem"></p>
-<ul class="lista-noticias" id="lista">
-<li class="item" data-texto="underground 2 revived need for speed underground 2 navegador multiplayer webgpu comunidade nfsu2 caio mendonca"><a aria-hidden="true" href="underground-2-revived.html" tabindex="-1"><img alt="" height="563" loading="lazy" src="nfsu2-revived.jpg" width="1000"/></a><div><p class="meta">[ Need for Speed ] · <time datetime="2026-11-25">25 de novembro de 2026</time></p><h2><a href="underground-2-revived.html">Underground 2 Revived: NFSU2 no navegador</a></h2><p>Projeto comunitário com multiplayer, free roam e melhorias; veja também o vídeo mais recente de Caio Mendonça sobre a atualização.</p></div></li>
-<li class="item" data-texto="gta vi pc port nao oficial vazamento xbox series x leonida take two dmca recompilacao rumor"><a aria-hidden="true" href="noticia-gta6-lancamento.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-gta6.jpg" width="800"/></a><div><p class="meta">[ GTA VI · Vazamentos ] · <time datetime="2026-11-25">25 de novembro de 2026</time></p><h2><a href="noticia-gta6-lancamento.html">GTA VI no PC: port não oficial é derrubado pela Take-Two</a></h2><p>O projeto Leonida tentava recompilar uma build atribuída ao Xbox. Uma notificação DMCA levou à remoção de milhares de repositórios.</p></div></li>
-<li class="item" data-texto="gta vi easter eggs segredos descobertas jogadores vice city dexter velozes furiosos referencias"><a aria-hidden="true" href="noticia-gta6-easter-eggs.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-gta6.jpg" width="800"/></a><div><p class="meta">[ GTA VI · Descobertas ] · <time datetime="2026-11-25">25 de novembro de 2026</time></p><h2><a href="noticia-gta6-easter-eggs.html">GTA VI: easter eggs e segredos descobertos pelos jogadores</a></h2><p>Referências a outros jogos, cultura pop e pistas escondidas estão entre as descobertas divulgadas após o lançamento.</p></div></li>
-<li class="item" data-texto="proton 11.0-3 chega como versão estável a valve lançou o proton 11.0-3 como nova versão estável, com 15 jogos a mais funcionando no linux e correções de problemas do proton 11. proton">
-<a aria-hidden="true" href="noticia-proton-11-0-3-estavel.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-proton.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Proton ] · <time datetime="2026-11-25">25 de novembro de 2026</time></p>
-<h2><a href="noticia-proton-11-0-3-estavel.html">Proton 11.0-3 chega como versão estável</a></h2>
-<p>A Valve lançou o Proton 11.0-3 como nova versão estável, com 15 jogos a mais funcionando no Linux e correções de problemas do Proton 11.</p>
-</div>
-</li>
-
-<li class="item" data-texto="scum ganha suporte oficial no linux pelo proton o jogo de sobrevivência scum agora tem suporte oficial no linux pelo proton, inclusive para entrar em servidores multiplayer. games no linux">
-<a aria-hidden="true" href="noticia-scum-proton.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-scum.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Games no Linux ] · <time datetime="2026-11-12">12 de novembro de 2026</time></p>
-<h2><a href="noticia-scum-proton.html">SCUM ganha suporte oficial no Linux pelo Proton</a></h2>
-<p>O jogo de sobrevivência SCUM agora tem suporte oficial no Linux pelo Proton, inclusive para entrar em servidores multiplayer.</p>
-</div>
-</li>
-<li class="item" data-texto="steam no linux agora é um aplicativo de 64 bits a atualização estável da steam de 11 de novembro trouxe o cliente para linux em 64 bits, rodando dentro de um contêiner do steam runtime. games no linux">
-<a aria-hidden="true" href="noticia-steam-cliente-64-bits.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-steam64.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Games no Linux ] · <time datetime="2026-11-12">12 de novembro de 2026</time></p>
-<h2><a href="noticia-steam-cliente-64-bits.html">Steam no Linux agora é um aplicativo de 64 bits</a></h2>
-<p>A atualização estável da Steam de 11 de novembro trouxe o cliente para Linux em 64 bits, rodando dentro de um contêiner do Steam Runtime.</p>
-</div>
-</li>
-<li class="item" data-texto="proton 11.0-3 está em testes; experimental ganha correções a valve atualizou o proton experimental com correções para jogos do windows no linux, e uma candidata ao proton 11.0-3 está em testes para virar a próxima versão estável. proton">
-<a aria-hidden="true" href="noticia-proton-11-0-3-testes.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-proton.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Proton ] · <time datetime="2026-11-10">10 de novembro de 2026</time></p>
-<h2><a href="noticia-proton-11-0-3-testes.html">Proton 11.0-3 está em testes; Experimental ganha correções</a></h2>
-<p>A Valve atualizou o Proton Experimental com correções para jogos do Windows no Linux, e uma candidata ao Proton 11.0-3 está em testes para virar a próxima versão estável.</p>
-</div>
-</li>
-<li class="item" data-texto="linux chega perto de 4% na pesquisa da steam no levantamento de outubro de 2026 da valve, o linux ficou com 3,95% dos sistemas, perto da marca de 4%, e o windows com 93,70%. games no linux">
-<a aria-hidden="true" href="noticia-steam-linux-quase-4-por-cento.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-steam.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Games no Linux ] · <time datetime="2026-11-02">2 de novembro de 2026</time></p>
-<h2><a href="noticia-steam-linux-quase-4-por-cento.html">Linux chega perto de 4% na pesquisa da Steam</a></h2>
-<p>No levantamento de outubro de 2026 da Valve, o Linux ficou com 3,95% dos sistemas, perto da marca de 4%, e o Windows com 93,70%.</p>
-</div>
-</li>
-<li class="item" data-texto="kernel linux 7.3 chega; veja qual kernel você usa o kernel linux 7.3 foi lançado. para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a ram do sistema. linux">
-<a aria-hidden="true" href="noticia-kernel-linux-7-3.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-kernel.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Linux ] · <time datetime="2026-10-19">19 de outubro de 2026</time></p>
-<h2><a href="noticia-kernel-linux-7-3.html">Kernel Linux 7.3 chega; veja qual kernel você usa</a></h2>
-<p>O kernel Linux 7.3 foi lançado. Para quem joga com pouca memória de vídeo, a novidade é a primeira parte de um trabalho de engenheiros da Valve: quando a memória da placa enche, o kernel pode mover dados menos importantes para a RAM do sistema.</p>
-</div>
-</li>
-<li class="item" data-texto="linux mint 27 “adrien”: data de lançamento e novidades o linux mint 27 “adrien” deve sair no natal de 2026, com base no ubuntu 26.04, cinnamon em wayland e fim das versões intermediárias. veja o que já é oficial. linux">
-<a aria-hidden="true" href="noticia-linux-mint-27.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-mint.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Linux ] · <time datetime="2026-10-14">14 de outubro de 2026</time></p>
-<h2><a href="noticia-linux-mint-27.html">Linux Mint 27 “Adrien”: data de lançamento e novidades</a></h2>
-<p>O Linux Mint 27 “Adrien” deve sair no Natal de 2026, com base no Ubuntu 26.04, Cinnamon em Wayland e fim das versões intermediárias. Veja o que já é oficial.</p>
-</div>
-</li>
-<li class="item" data-texto="ogre battle 64 ganha versões jogáveis no pc o projeto de recompilação de ogre battle 64 já tem versões para baixar, e a mais recente, a 0.8.3, é de 14 de outubro. recompilados">
-<a aria-hidden="true" href="recomp-ogre-battle-64.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="rec-ogre.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Recompilados ] · <time datetime="2026-10-14">14 de outubro de 2026</time></p>
-<h2><a href="recomp-ogre-battle-64.html">Ogre Battle 64 ganha versões jogáveis no PC</a></h2>
-<p>O projeto de recompilação de Ogre Battle 64 já tem versões para baixar, e a mais recente, a 0.8.3, é de 14 de outubro.</p>
-</div>
-</li>
-<li class="item" data-texto="pcsx2 2.8 chega com foco em desempenho o pcsx2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão. emulação">
-<a aria-hidden="true" href="noticia-pcsx2-2-8.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="noticia-pcsx2.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Emulação ] · <time datetime="2026-08-28">28 de agosto de 2026</time></p>
-<h2><a href="noticia-pcsx2-2-8.html">PCSX2 2.8 chega com foco em desempenho</a></h2>
-<p>O PCSX2 2.8.0 foi lançado cerca de seis meses depois da versão 2.6.0, com mudanças concentradas no motor gráfico: mais desempenho, correções de renderização e mais precisão.</p>
-</div>
-</li>
-<li class="item" data-texto="mario kart wiicompiled sai do anúncio e ganha repositório o mario kart wiicompiled, anunciado em 15 de julho como a primeira recompilação estática de um jogo de wii, já tem repositório público com instruções de instalação. recompilados">
-<a aria-hidden="true" href="recomp-mario-kart-wiicompiled.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="rec-mariokart.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Recompilados ] · <time datetime="2026-07-15">15 de julho de 2026</time></p>
-<h2><a href="recomp-mario-kart-wiicompiled.html">Mario Kart Wiicompiled sai do anúncio e ganha repositório</a></h2>
-<p>O Mario Kart Wiicompiled, anunciado em 15 de julho como a primeira recompilação estática de um jogo de Wii, já tem repositório público com instruções de instalação.</p>
-</div>
-</li>
-<li class="item" data-texto="banjo: recompiled chega ao pc, mac e linux um port de banjo-kazooie para pc foi lançado pelo mesmo desenvolvedor da ferramenta n64: recompiled. recompilados">
-<a aria-hidden="true" href="recomp-banjo-recompiled.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="rec-banjo.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Recompilados ] · <time datetime="2026-01-26">26 de janeiro de 2026</time></p>
-<h2><a href="recomp-banjo-recompiled.html">Banjo: Recompiled chega ao PC, Mac e Linux</a></h2>
-<p>Um port de Banjo-Kazooie para PC foi lançado pelo mesmo desenvolvedor da ferramenta N64: Recompiled.</p>
-</div>
-</li>
-<li class="item" data-texto="quest 64 ganha port nativo para pc quest 64 ganhou um port para pc feito com o n64recomp, na versão 0.1. recompilados">
-<a aria-hidden="true" href="recomp-quest-64.html" tabindex="-1"><img alt="" height="450" loading="lazy" src="rec-quest64.jpg" width="800"/></a>
-<div>
-<p class="meta">[ Recompilados ] · <time datetime="2026-01-13">13 de janeiro de 2026</time></p>
-<h2><a href="recomp-quest-64.html">Quest 64 ganha port nativo para PC</a></h2>
-<p>Quest 64 ganhou um port para PC feito com o N64Recomp, na versão 0.1.</p>
-</div>
-</li>
-</ul>
-<p class="vazio" hidden="" id="vazio">Nenhuma notícia encontrada para essa busca.</p>
-</main>
-<footer class="bot">
-<div class="wrap">
-<span>© 2026 Controle Quebrado</span>
-<nav aria-label="Rodapé">
-<a href="sobre.html">Sobre</a><a href="noticias.html">Notícias</a><a href="comandos.html">Comandos</a><a href="quiz-driver.html">Quiz de driver</a><a href="indicados.html">Indicados</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a><a href="apoie.html">Apoie</a><a href="feed.xml">RSS</a><a href="https://www.youtube.com/@controlequebrado_tv" rel="noopener" target="_blank">Controle Quebrado</a><a href="https://www.youtube.com/@caiomendonca8509/videos" rel="noopener" target="_blank">Caio Mendonça</a>
-</nav>
-</div>
-</footer>
-<script>
-(function () {
+  </style>
+  <link href="tema.css" rel="stylesheet"/>
+  <script type="application/ld+json">
+   {"@context": "https://schema.org", "@type": "CollectionPage", "name": "Todas as notícias", "url": "https://mozaiam.github.io/noticias.html", "inLanguage": "pt-BR", "description": "Todas as notícias do Controle Quebrado sobre Linux, games, emulação e recompilações.", "isPartOf": {"@type": "WebSite", "name": "Controle Quebrado", "url": "https://mozaiam.github.io/"}}
+  </script>
+  <link href="https://mozaiam.github.io/feed.xml" rel="alternate" title="Controle Quebrado" type="application/rss+xml"/>
+ </head>
+ <body>
+  <header class="top">
+   <div class="wrap bar">
+    <a class="logo" href="index.html">
+     <img alt="" height="40" src="icone.png" width="40"/>
+     Controle Quebrado
+    </a>
+    <nav aria-label="Principal" class="menu">
+     <a href="index.html">
+      Início
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+     <a href="index.html#emulacao">
+      Emulação
+     </a>
+     <a href="index.html#recompilados">
+      Recompilados
+     </a>
+     <a href="index.html#linux">
+      Linux
+     </a>
+     <a href="underground-2-revived.html">
+      Underground 2
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+    </nav>
+    <a class="sub" href="https://www.youtube.com/@controlequebrado_tv">
+     Inscreva-se no canal
+    </a>
+   </div>
+  </header>
+  <main class="container">
+   <h1>
+    Todas as
+    <span>
+     notícias
+    </span>
+   </h1>
+   <p>
+    Lançamentos de Linux, games, emulação e recompilações, do mais novo para o mais antigo.
+    <a href="feed.xml">
+     Assine o feed RSS
+    </a>
+    .
+    Revisão editorial em 28/11/2026.
+   </p>
+   <p>
+    <label class="sr-only" for="busca">
+     Buscar nas notícias
+    </label>
+    <input autocomplete="off" class="busca" id="busca" placeholder="Buscar: Proton, Steam, PCSX2..." type="search"/>
+   </p>
+   <p aria-live="polite" class="sr-only" id="contagem">
+   </p>
+   <ul class="lista-noticias" id="lista">
+    <li class="item" data-texto="linux linux mint 27 “adrien” já está disponível em versão beta o beta oficial saiu em 27 de novembro. veja requisitos, suporte até 2031 e cuidados antes de testar.">
+     <a aria-hidden="true" href="noticia-linux-mint-27.html" tabindex="-1">
+      <img alt="Linux Mint 27 “Adrien” já está disponível em versão beta" height="563" loading="lazy" src="noticia-mint.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Linux · 27/11/2026
+      </p>
+      <h2>
+       <a href="noticia-linux-mint-27.html">
+        Linux Mint 27 “Adrien” já está disponível em versão beta
+       </a>
+      </h2>
+      <p>
+       O beta oficial saiu em 27 de novembro. Veja requisitos, suporte até 2031 e cuidados antes de testar.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="gta vi · reportagem gta vi já foi lançado; projeto não oficial de port para pc é derrubado o jogo chegou ao ps5 e xbox series x|s; o projeto leonida é um caso separado e não representa uma versão oficial para pc.">
+     <a aria-hidden="true" href="noticia-gta6-lancamento.html" tabindex="-1">
+      <img alt="GTA VI já foi lançado; projeto não oficial de port para PC é derrubado" height="563" loading="lazy" src="noticia-gta6.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       GTA VI · Reportagem · 25/11/2026
+      </p>
+      <h2>
+       <a href="noticia-gta6-lancamento.html">
+        GTA VI já foi lançado; projeto não oficial de port para PC é derrubado
+       </a>
+      </h2>
+      <p>
+       O jogo chegou ao PS5 e Xbox Series X|S; o projeto Leonida é um caso separado e não representa uma versão oficial para PC.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="gta vi · comunidade gta vi: easter eggs, referências e descobertas da comunidade acompanhe achados com distinção entre reportagens, demonstrações, teorias e rumores.">
+     <a aria-hidden="true" href="noticia-gta6-easter-eggs.html" tabindex="-1">
+      <img alt="GTA VI: easter eggs, referências e descobertas da comunidade" height="563" loading="lazy" src="noticia-gta6.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       GTA VI · Comunidade · 25/11/2026
+      </p>
+      <h2>
+       <a href="noticia-gta6-easter-eggs.html">
+        GTA VI: easter eggs, referências e descobertas da comunidade
+       </a>
+      </h2>
+      <p>
+       Acompanhe achados com distinção entre reportagens, demonstrações, teorias e rumores.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="need for speed underground 2 revived: nfsu2 no navegador guia do projeto comunitário, seus recursos e o arquivamento do repositório público.">
+     <a aria-hidden="true" href="underground-2-revived.html" tabindex="-1">
+      <img alt="Underground 2 Revived: NFSU2 no navegador" height="563" loading="lazy" src="nfsu2-revived.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Need for Speed · 25/11/2026
+      </p>
+      <h2>
+       <a href="underground-2-revived.html">
+        Underground 2 Revived: NFSU2 no navegador
+       </a>
+      </h2>
+      <p>
+       Guia do projeto comunitário, seus recursos e o arquivamento do repositório público.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="proton proton 11.0-3 é lançado com novos jogos compatíveis e correções notas oficiais da valve: jogos adicionados e correções de controles.">
+     <a aria-hidden="true" href="noticia-proton-11-0-3-estavel.html" tabindex="-1">
+      <img alt="Proton 11.0-3 é lançado com novos jogos compatíveis e correções" height="563" loading="lazy" src="noticia-proton.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Proton · 24/11/2026
+      </p>
+      <h2>
+       <a href="noticia-proton-11-0-3-estavel.html">
+        Proton 11.0-3 é lançado com novos jogos compatíveis e correções
+       </a>
+      </h2>
+      <p>
+       Notas oficiais da Valve: jogos adicionados e correções de controles.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="games no linux steam para linux passa a usar cliente de 64 bits a mudança do cliente não elimina a necessidade de bibliotecas de 32 bits para alguns jogos.">
+     <a aria-hidden="true" href="noticia-steam-cliente-64-bits.html" tabindex="-1">
+      <img alt="Steam para Linux passa a usar cliente de 64 bits" height="563" loading="lazy" src="noticia-steam64.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Games no Linux · 12/11/2026
+      </p>
+      <h2>
+       <a href="noticia-steam-cliente-64-bits.html">
+        Steam para Linux passa a usar cliente de 64 bits
+       </a>
+      </h2>
+      <p>
+       A mudança do cliente não elimina a necessidade de bibliotecas de 32 bits para alguns jogos.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="games no linux scum recebe suporte para multiplayer no linux via proton as notas oficiais da atualização de novembro destacam entrada em servidores multiplayer via proton.">
+     <a aria-hidden="true" href="noticia-scum-proton.html" tabindex="-1">
+      <img alt="SCUM recebe suporte para multiplayer no Linux via Proton" height="563" loading="lazy" src="noticia-scum.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Games no Linux · 12/11/2026
+      </p>
+      <h2>
+       <a href="noticia-scum-proton.html">
+        SCUM recebe suporte para multiplayer no Linux via Proton
+       </a>
+      </h2>
+      <p>
+       As notas oficiais da atualização de novembro destacam entrada em servidores multiplayer via Proton.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="proton · histórico proton 11.0-3 em testes: registro da fase de desenvolvimento registro histórico da fase de testes, com link para a versão estável posterior.">
+     <a aria-hidden="true" href="noticia-proton-11-0-3-testes.html" tabindex="-1">
+      <img alt="Proton 11.0-3 em testes: registro da fase de desenvolvimento" height="563" loading="lazy" src="noticia-proton.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Proton · Histórico · 10/11/2026
+      </p>
+      <h2>
+       <a href="noticia-proton-11-0-3-testes.html">
+        Proton 11.0-3 em testes: registro da fase de desenvolvimento
+       </a>
+      </h2>
+      <p>
+       Registro histórico da fase de testes, com link para a versão estável posterior.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="games no linux linux alcança 3,95% na pesquisa de hardware da steam de outubro a pesquisa da valve registrou linux em 3,95%; entenda os limites da amostra.">
+     <a aria-hidden="true" href="noticia-steam-linux-quase-4-por-cento.html" tabindex="-1">
+      <img alt="Linux alcança 3,95% na pesquisa de hardware da Steam de outubro" height="563" loading="lazy" src="noticia-steam.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Games no Linux · 02/11/2026
+      </p>
+      <h2>
+       <a href="noticia-steam-linux-quase-4-por-cento.html">
+        Linux alcança 3,95% na pesquisa de hardware da Steam de outubro
+       </a>
+      </h2>
+      <p>
+       A pesquisa da Valve registrou Linux em 3,95%; entenda os limites da amostra.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="linux kernel linux 7.3 chega à versão 7.3.6; veja como conferir o seu a série 7.3 recebeu a versão estável 7.3.6 em 23 de novembro.">
+     <a aria-hidden="true" href="noticia-kernel-linux-7-3.html" tabindex="-1">
+      <img alt="Kernel Linux 7.3 chega à versão 7.3.6; veja como conferir o seu" height="563" loading="lazy" src="noticia-kernel.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Linux · 23/10/2026
+      </p>
+      <h2>
+       <a href="noticia-kernel-linux-7-3.html">
+        Kernel Linux 7.3 chega à versão 7.3.6; veja como conferir o seu
+       </a>
+      </h2>
+      <p>
+       A série 7.3 recebeu a versão estável 7.3.6 em 23 de novembro.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="emulação pcsx2 2.8.0: novidades da versão estável e builds de desenvolvimento entenda a diferença entre a versão estável 2.8.0 e builds 2.9.x de desenvolvimento.">
+     <a aria-hidden="true" href="noticia-pcsx2-2-8.html" tabindex="-1">
+      <img alt="PCSX2 2.8.0: novidades da versão estável e builds de desenvolvimento" height="563" loading="lazy" src="noticia-pcsx2.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Emulação · 28/08/2026
+      </p>
+      <h2>
+       <a href="noticia-pcsx2-2-8.html">
+        PCSX2 2.8.0: novidades da versão estável e builds de desenvolvimento
+       </a>
+      </h2>
+      <p>
+       Entenda a diferença entre a versão estável 2.8.0 e builds 2.9.x de desenvolvimento.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="recompilados ogre battle 64 ganha versão recompilada para pc o repositório de releases consultado lista a versão 0.8.3, de 14 de outubro.">
+     <a aria-hidden="true" href="recomp-ogre-battle-64.html" tabindex="-1">
+      <img alt="Ogre Battle 64 ganha versão recompilada para PC" height="563" loading="lazy" src="rec-ogre.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Recompilados · 14/10/2026
+      </p>
+      <h2>
+       <a href="recomp-ogre-battle-64.html">
+        Ogre Battle 64 ganha versão recompilada para PC
+       </a>
+      </h2>
+      <p>
+       O repositório de releases consultado lista a versão 0.8.3, de 14 de outubro.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="recompilados mario kart wiicompiled: projeto e repositório conheça o projeto e consulte as instruções atualizadas no repositório.">
+     <a aria-hidden="true" href="recomp-mario-kart-wiicompiled.html" tabindex="-1">
+      <img alt="Mario Kart Wiicompiled: projeto e repositório" height="563" loading="lazy" src="rec-mariokart.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Recompilados · 15/07/2026
+      </p>
+      <h2>
+       <a href="recomp-mario-kart-wiicompiled.html">
+        Mario Kart Wiicompiled: projeto e repositório
+       </a>
+      </h2>
+      <p>
+       Conheça o projeto e consulte as instruções atualizadas no repositório.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="recompilados banjo: recompiled chega ao pc, mac e linux introdução ao projeto comunitário; verifique builds e requisitos na fonte oficial.">
+     <a aria-hidden="true" href="recomp-banjo-recompiled.html" tabindex="-1">
+      <img alt="Banjo: Recompiled chega ao PC, Mac e Linux" height="563" loading="lazy" src="rec-banjo.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Recompilados · 26/01/2026
+      </p>
+      <h2>
+       <a href="recomp-banjo-recompiled.html">
+        Banjo: Recompiled chega ao PC, Mac e Linux
+       </a>
+      </h2>
+      <p>
+       Introdução ao projeto comunitário; verifique builds e requisitos na fonte oficial.
+      </p>
+     </div>
+    </li>
+    <li class="item" data-texto="recompilados quest 64 ganha port nativo para pc introdução ao projeto quest 64: recompiled e links para suas versões atuais.">
+     <a aria-hidden="true" href="recomp-quest-64.html" tabindex="-1">
+      <img alt="Quest 64 ganha port nativo para PC" height="563" loading="lazy" src="rec-quest64.jpg" width="1000"/>
+     </a>
+     <div>
+      <p class="meta">
+       Recompilados · 13/01/2026
+      </p>
+      <h2>
+       <a href="recomp-quest-64.html">
+        Quest 64 ganha port nativo para PC
+       </a>
+      </h2>
+      <p>
+       Introdução ao projeto Quest 64: Recompiled e links para suas versões atuais.
+      </p>
+     </div>
+    </li>
+   </ul>
+   <p class="vazio" hidden="" id="vazio">
+    Nenhuma notícia encontrada para essa busca.
+   </p>
+  </main>
+  <footer class="bot">
+   <div class="wrap">
+    <span>
+     © 2026 Controle Quebrado
+    </span>
+    <nav aria-label="Rodapé">
+     <a href="sobre.html">
+      Sobre
+     </a>
+     <a href="noticias.html">
+      Notícias
+     </a>
+     <a href="comandos.html">
+      Comandos
+     </a>
+     <a href="quiz-driver.html">
+      Quiz de driver
+     </a>
+     <a href="indicados.html">
+      Indicados
+     </a>
+     <a href="contato.html">
+      Contato
+     </a>
+     <a href="privacidade.html">
+      Privacidade
+     </a>
+     <a href="apoie.html">
+      Apoie
+     </a>
+     <a href="feed.xml">
+      RSS
+     </a>
+     <a href="https://www.youtube.com/@controlequebrado_tv" rel="noopener" target="_blank">
+      Controle Quebrado
+     </a>
+     <a href="https://www.youtube.com/@caiomendonca8509/videos" rel="noopener" target="_blank">
+      Caio Mendonça
+     </a>
+     <a href="videos.html">
+      Vídeos
+     </a>
+    </nav>
+   </div>
+  </footer>
+  <script>
+   (function () {
   var campo = document.getElementById("busca"), itens = document.querySelectorAll("#lista .item");
   var vazio = document.getElementById("vazio"), contagem = document.getElementById("contagem");
   function norm(s) { return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
@@ -245,6 +505,6 @@ li { margin: .5rem 0; }
   }
   campo.addEventListener("input", filtrar);
 })();
-</script>
-</body>
+  </script>
+ </body>
 </html>
